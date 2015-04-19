@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC3B4C291AE3BF0100342628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C281AE3BF0100342628 /* AppDelegate.swift */; };
+		EC3B4C2B1AE3BF0100342628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C2A1AE3BF0100342628 /* ViewController.swift */; };
+		EC3B4C2E1AE3BF0100342628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C2C1AE3BF0100342628 /* Main.storyboard */; };
+		EC3B4C301AE3BF0100342628 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C2F1AE3BF0100342628 /* Images.xcassets */; };
+		EC3B4C331AE3BF0200342628 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */; };
+		EC3B4C3F1AE3BF0200342628 /* Indus_ValleyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C3E1AE3BF0200342628 /* Indus_ValleyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC3B4C391AE3BF0200342628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC3B4C1B1AE3BF0100342628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC3B4C221AE3BF0100342628;
+			remoteInfo = "Indus Valley";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC3B4C231AE3BF0100342628 /* Indus Valley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indus Valley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3B4C271AE3BF0100342628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3B4C281AE3BF0100342628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3B4C2A1AE3BF0100342628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC3B4C2D1AE3BF0100342628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC3B4C2F1AE3BF0100342628 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC3B4C321AE3BF0200342628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EC3B4C381AE3BF0200342628 /* Indus ValleyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Indus ValleyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3B4C3D1AE3BF0200342628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3B4C3E1AE3BF0200342628 /* Indus_ValleyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indus_ValleyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC3B4C201AE3BF0100342628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3B4C351AE3BF0200342628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC3B4C1A1AE3BF0100342628 = {
+			isa = PBXGroup;
+			children = (
+				EC3B4C251AE3BF0100342628 /* Indus Valley */,
+				EC3B4C3B1AE3BF0200342628 /* Indus ValleyTests */,
+				EC3B4C241AE3BF0100342628 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC3B4C241AE3BF0100342628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC3B4C231AE3BF0100342628 /* Indus Valley.app */,
+				EC3B4C381AE3BF0200342628 /* Indus ValleyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3B4C251AE3BF0100342628 /* Indus Valley */ = {
+			isa = PBXGroup;
+			children = (
+				EC3B4C281AE3BF0100342628 /* AppDelegate.swift */,
+				EC3B4C2A1AE3BF0100342628 /* ViewController.swift */,
+				EC3B4C2C1AE3BF0100342628 /* Main.storyboard */,
+				EC3B4C2F1AE3BF0100342628 /* Images.xcassets */,
+				EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */,
+				EC3B4C261AE3BF0100342628 /* Supporting Files */,
+			);
+			path = "Indus Valley";
+			sourceTree = "<group>";
+		};
+		EC3B4C261AE3BF0100342628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC3B4C271AE3BF0100342628 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC3B4C3B1AE3BF0200342628 /* Indus ValleyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3B4C3E1AE3BF0200342628 /* Indus_ValleyTests.swift */,
+				EC3B4C3C1AE3BF0200342628 /* Supporting Files */,
+			);
+			path = "Indus ValleyTests";
+			sourceTree = "<group>";
+		};
+		EC3B4C3C1AE3BF0200342628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC3B4C3D1AE3BF0200342628 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC3B4C221AE3BF0100342628 /* Indus Valley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3B4C421AE3BF0200342628 /* Build configuration list for PBXNativeTarget "Indus Valley" */;
+			buildPhases = (
+				EC3B4C1F1AE3BF0100342628 /* Sources */,
+				EC3B4C201AE3BF0100342628 /* Frameworks */,
+				EC3B4C211AE3BF0100342628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Indus Valley";
+			productName = "Indus Valley";
+			productReference = EC3B4C231AE3BF0100342628 /* Indus Valley.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC3B4C371AE3BF0200342628 /* Indus ValleyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3B4C451AE3BF0200342628 /* Build configuration list for PBXNativeTarget "Indus ValleyTests" */;
+			buildPhases = (
+				EC3B4C341AE3BF0200342628 /* Sources */,
+				EC3B4C351AE3BF0200342628 /* Frameworks */,
+				EC3B4C361AE3BF0200342628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC3B4C3A1AE3BF0200342628 /* PBXTargetDependency */,
+			);
+			name = "Indus ValleyTests";
+			productName = "Indus ValleyTests";
+			productReference = EC3B4C381AE3BF0200342628 /* Indus ValleyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC3B4C1B1AE3BF0100342628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = haaakon;
+				TargetAttributes = {
+					EC3B4C221AE3BF0100342628 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EC3B4C371AE3BF0200342628 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EC3B4C221AE3BF0100342628;
+					};
+				};
+			};
+			buildConfigurationList = EC3B4C1E1AE3BF0100342628 /* Build configuration list for PBXProject "Indus Valley" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC3B4C1A1AE3BF0100342628;
+			productRefGroup = EC3B4C241AE3BF0100342628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC3B4C221AE3BF0100342628 /* Indus Valley */,
+				EC3B4C371AE3BF0200342628 /* Indus ValleyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3B4C211AE3BF0100342628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3B4C2E1AE3BF0100342628 /* Main.storyboard in Resources */,
+				EC3B4C331AE3BF0200342628 /* LaunchScreen.xib in Resources */,
+				EC3B4C301AE3BF0100342628 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3B4C361AE3BF0200342628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC3B4C1F1AE3BF0100342628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3B4C2B1AE3BF0100342628 /* ViewController.swift in Sources */,
+				EC3B4C291AE3BF0100342628 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3B4C341AE3BF0200342628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3B4C3F1AE3BF0200342628 /* Indus_ValleyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC3B4C3A1AE3BF0200342628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC3B4C221AE3BF0100342628 /* Indus Valley */;
+			targetProxy = EC3B4C391AE3BF0200342628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC3B4C2C1AE3BF0100342628 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3B4C2D1AE3BF0100342628 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3B4C321AE3BF0200342628 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC3B4C401AE3BF0200342628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC3B4C411AE3BF0200342628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC3B4C431AE3BF0200342628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Indus Valley/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC3B4C441AE3BF0200342628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Indus Valley/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC3B4C461AE3BF0200342628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Indus ValleyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Indus Valley.app/Indus Valley";
+			};
+			name = Debug;
+		};
+		EC3B4C471AE3BF0200342628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Indus ValleyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Indus Valley.app/Indus Valley";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC3B4C1E1AE3BF0100342628 /* Build configuration list for PBXProject "Indus Valley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3B4C401AE3BF0200342628 /* Debug */,
+				EC3B4C411AE3BF0200342628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3B4C421AE3BF0200342628 /* Build configuration list for PBXNativeTarget "Indus Valley" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3B4C431AE3BF0200342628 /* Debug */,
+				EC3B4C441AE3BF0200342628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC3B4C451AE3BF0200342628 /* Build configuration list for PBXNativeTarget "Indus ValleyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3B4C461AE3BF0200342628 /* Debug */,
+				EC3B4C471AE3BF0200342628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC3B4C1B1AE3BF0100342628 /* Project object */;
+}
