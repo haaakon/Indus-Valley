@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class Indus_ValleyTests: XCTestCase {
+class VolumeTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -20,17 +20,11 @@ class Indus_ValleyTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testCreateVolume() {
+        let singleLitre = Volume(quantity: 1, unit: .Litre)
+        XCTAssert(singleLitre.quantity == 1, "one litre was not set with correct value")
+        XCTAssert(singleLitre.unit == VolumeUnit.Litre, "one litre did not get correct unit")
     }
     
 }

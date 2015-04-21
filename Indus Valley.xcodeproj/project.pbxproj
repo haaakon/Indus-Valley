@@ -7,12 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC37D21F1AE538F400507465 /* Mass+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D21E1AE538F400507465 /* Mass+JSON.swift */; };
+		EC37D2201AE538F400507465 /* Mass+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D21E1AE538F400507465 /* Mass+JSON.swift */; };
+		EC37D2221AE53E5400507465 /* AlternativeNamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */; };
+		EC37D2231AE53E5400507465 /* AlternativeNamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */; };
 		EC3B4C291AE3BF0100342628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C281AE3BF0100342628 /* AppDelegate.swift */; };
 		EC3B4C2B1AE3BF0100342628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C2A1AE3BF0100342628 /* ViewController.swift */; };
 		EC3B4C2E1AE3BF0100342628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C2C1AE3BF0100342628 /* Main.storyboard */; };
 		EC3B4C301AE3BF0100342628 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C2F1AE3BF0100342628 /* Images.xcassets */; };
 		EC3B4C331AE3BF0200342628 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */; };
-		EC3B4C3F1AE3BF0200342628 /* Indus_ValleyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C3E1AE3BF0200342628 /* Indus_ValleyTests.swift */; };
+		EC3B4C3F1AE3BF0200342628 /* VolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C3E1AE3BF0200342628 /* VolumeTests.swift */; };
+		EC3B4C491AE3C03C00342628 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C481AE3C03C00342628 /* MassUnit.swift */; };
+		EC3B4C4A1AE3C03C00342628 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C481AE3C03C00342628 /* MassUnit.swift */; };
+		EC3B4C4C1AE3C05700342628 /* VolumeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C4B1AE3C05700342628 /* VolumeUnit.swift */; };
+		EC3B4C4D1AE3C05700342628 /* VolumeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C4B1AE3C05700342628 /* VolumeUnit.swift */; };
+		EC3B4C4F1AE3C07F00342628 /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C4E1AE3C07F00342628 /* Mass.swift */; };
+		EC3B4C501AE3C07F00342628 /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C4E1AE3C07F00342628 /* Mass.swift */; };
+		EC3B4C521AE3C0F700342628 /* MassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C511AE3C0F700342628 /* MassTests.swift */; };
+		EC3B4C541AE3D4B500342628 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C531AE3D4B500342628 /* Volume.swift */; };
+		EC3B4C551AE3D4B500342628 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C531AE3D4B500342628 /* Volume.swift */; };
+		EC3B4C571AE3D69300342628 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C561AE3D69300342628 /* Measurement.swift */; };
+		EC3B4C581AE3D69300342628 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C561AE3D69300342628 /* Measurement.swift */; };
+		EC3B4C5A1AE3DE7200342628 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C591AE3DE7200342628 /* Unit.swift */; };
+		EC3B4C5B1AE3DE7200342628 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C591AE3DE7200342628 /* Unit.swift */; };
+		EC3B4C6A1AE3E56800342628 /* MassAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */; };
+		EC3B4C6B1AE3E56800342628 /* MassAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC37D21E1AE538F400507465 /* Mass+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mass+JSON.swift"; sourceTree = "<group>"; };
+		EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternativeNamesManager.swift; sourceTree = "<group>"; };
 		EC3B4C231AE3BF0100342628 /* Indus Valley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indus Valley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3B4C271AE3BF0100342628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC3B4C281AE3BF0100342628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +56,16 @@
 		EC3B4C321AE3BF0200342628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EC3B4C381AE3BF0200342628 /* Indus ValleyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Indus ValleyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3B4C3D1AE3BF0200342628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC3B4C3E1AE3BF0200342628 /* Indus_ValleyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indus_ValleyTests.swift; sourceTree = "<group>"; };
+		EC3B4C3E1AE3BF0200342628 /* VolumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeTests.swift; sourceTree = "<group>"; };
+		EC3B4C481AE3C03C00342628 /* MassUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MassUnit.swift; path = "Indus ValleyTests/MassUnit.swift"; sourceTree = SOURCE_ROOT; };
+		EC3B4C4B1AE3C05700342628 /* VolumeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeUnit.swift; sourceTree = "<group>"; };
+		EC3B4C4E1AE3C07F00342628 /* Mass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mass.swift; sourceTree = "<group>"; };
+		EC3B4C511AE3C0F700342628 /* MassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassTests.swift; sourceTree = "<group>"; };
+		EC3B4C531AE3D4B500342628 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		EC3B4C561AE3D69300342628 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		EC3B4C591AE3DE7200342628 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		EC3B4C691AE3E56800342628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/MassAlternativeNames.json; sourceTree = "<group>"; };
+		EC3B4C6C1AE3E56F00342628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/MassAlternativeNames.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +112,15 @@
 				EC3B4C2C1AE3BF0100342628 /* Main.storyboard */,
 				EC3B4C2F1AE3BF0100342628 /* Images.xcassets */,
 				EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */,
+				EC3B4C481AE3C03C00342628 /* MassUnit.swift */,
+				EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */,
+				EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */,
+				EC3B4C4B1AE3C05700342628 /* VolumeUnit.swift */,
+				EC3B4C591AE3DE7200342628 /* Unit.swift */,
+				EC3B4C4E1AE3C07F00342628 /* Mass.swift */,
+				EC37D21E1AE538F400507465 /* Mass+JSON.swift */,
+				EC3B4C531AE3D4B500342628 /* Volume.swift */,
+				EC3B4C561AE3D69300342628 /* Measurement.swift */,
 				EC3B4C261AE3BF0100342628 /* Supporting Files */,
 			);
 			path = "Indus Valley";
@@ -98,7 +137,8 @@
 		EC3B4C3B1AE3BF0200342628 /* Indus ValleyTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC3B4C3E1AE3BF0200342628 /* Indus_ValleyTests.swift */,
+				EC3B4C3E1AE3BF0200342628 /* VolumeTests.swift */,
+				EC3B4C511AE3C0F700342628 /* MassTests.swift */,
 				EC3B4C3C1AE3BF0200342628 /* Supporting Files */,
 			);
 			path = "Indus ValleyTests";
@@ -164,7 +204,6 @@
 					};
 					EC3B4C371AE3BF0200342628 = {
 						CreatedOnToolsVersion = 6.3;
-						TestTargetID = EC3B4C221AE3BF0100342628;
 					};
 				};
 			};
@@ -194,6 +233,7 @@
 			files = (
 				EC3B4C2E1AE3BF0100342628 /* Main.storyboard in Resources */,
 				EC3B4C331AE3BF0200342628 /* LaunchScreen.xib in Resources */,
+				EC3B4C6A1AE3E56800342628 /* MassAlternativeNames.json in Resources */,
 				EC3B4C301AE3BF0100342628 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3B4C6B1AE3E56800342628 /* MassAlternativeNames.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3B4C491AE3C03C00342628 /* MassUnit.swift in Sources */,
 				EC3B4C2B1AE3BF0100342628 /* ViewController.swift in Sources */,
+				EC37D21F1AE538F400507465 /* Mass+JSON.swift in Sources */,
 				EC3B4C291AE3BF0100342628 /* AppDelegate.swift in Sources */,
+				EC37D2221AE53E5400507465 /* AlternativeNamesManager.swift in Sources */,
+				EC3B4C541AE3D4B500342628 /* Volume.swift in Sources */,
+				EC3B4C4C1AE3C05700342628 /* VolumeUnit.swift in Sources */,
+				EC3B4C5A1AE3DE7200342628 /* Unit.swift in Sources */,
+				EC3B4C4F1AE3C07F00342628 /* Mass.swift in Sources */,
+				EC3B4C571AE3D69300342628 /* Measurement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +270,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3B4C3F1AE3BF0200342628 /* Indus_ValleyTests.swift in Sources */,
+				EC3B4C3F1AE3BF0200342628 /* VolumeTests.swift in Sources */,
+				EC3B4C521AE3C0F700342628 /* MassTests.swift in Sources */,
+				EC37D2201AE538F400507465 /* Mass+JSON.swift in Sources */,
+				EC3B4C501AE3C07F00342628 /* Mass.swift in Sources */,
+				EC37D2231AE53E5400507465 /* AlternativeNamesManager.swift in Sources */,
+				EC3B4C551AE3D4B500342628 /* Volume.swift in Sources */,
+				EC3B4C4A1AE3C03C00342628 /* MassUnit.swift in Sources */,
+				EC3B4C5B1AE3DE7200342628 /* Unit.swift in Sources */,
+				EC3B4C4D1AE3C05700342628 /* VolumeUnit.swift in Sources */,
+				EC3B4C581AE3D69300342628 /* Measurement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +308,15 @@
 				EC3B4C321AE3BF0200342628 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3B4C691AE3E56800342628 /* Base */,
+				EC3B4C6C1AE3E56F00342628 /* en */,
+			);
+			name = MassAlternativeNames.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,9 +409,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Indus Valley/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Indus Valley/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,7 +431,7 @@
 		EC3B4C461AE3BF0200342628 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -373,14 +443,14 @@
 				INFOPLIST_FILE = "Indus ValleyTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Indus Valley.app/Indus Valley";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EC3B4C471AE3BF0200342628 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -388,7 +458,6 @@
 				INFOPLIST_FILE = "Indus ValleyTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Indus Valley.app/Indus Valley";
 			};
 			name = Release;
 		};
@@ -411,6 +480,7 @@
 				EC3B4C441AE3BF0200342628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC3B4C451AE3BF0200342628 /* Build configuration list for PBXNativeTarget "Indus ValleyTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +489,7 @@
 				EC3B4C471AE3BF0200342628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

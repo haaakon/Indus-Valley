@@ -1,0 +1,21 @@
+{
+    "g": [
+          "grams",
+          "g",
+          "grammes",
+          "gramme"
+          ],
+    "kg": [
+           "kilos",
+           "kilogram",
+           "kg",
+           "kgs",
+           "kilograms"
+           ],
+    "t": [
+          "tonnes",
+          "ton",
+          "tons",
+          "t"
+          ]
+}
