@@ -46,15 +46,15 @@ class MassTests: XCTestCase {
     }
 
     func testCreateGramMassFromString() {
-        let mass = Mass(quantity: 1, unitAsString: "g")
+        let mass = Mass.fromString("g", quantity: 1)
         XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass")
-        XCTAssertTrue(mass?.unit == MassUnit.Gram, "couldn't create correct mass")
-
+        XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"g\", got \(mass?.unit)")
     }
+
     func testCreateGramMassFromAlternativeNameString() {
-        let mass = Mass(quantity: 1, unitAsString: "gram")
-        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass")
-        XCTAssertTrue(mass?.unit == MassUnit.Gram, "couldn't create correct mass")
+        let mass = Mass.fromString("gram", quantity: 1)
+        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass, expected quantity 1, got \(mass?.quantity)")
+        XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"gram\", got \(mass?.unit)")
     }
 
     func testConvertGramToKilogram() {

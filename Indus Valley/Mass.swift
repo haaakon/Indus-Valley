@@ -18,14 +18,19 @@ struct Mass {
         self.unit = unit
     }
 
-    init?(quantity: Double, unitAsString: String) {
-        if let massUnit = MassUnit(rawValue: unitAsString) {
-            self.init(quantity: quantity, unit: massUnit)
-        }else {
-            return nil
-        }
-
-    }
+//    init?(quantity: Double, unitAsString: String) {
+//        if let massUnit = MassUnit(rawValue: unitAsString) {
+//            for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
+//                for alternative in alternativesArray {
+//                    if let actualMassUnit = MassUnit(rawValue: alternative) {
+//                        self.init(quantity: quantity, unit: actualMassUnit)
+//                    }
+//                }
+//            }
+//        }
+//            return nil
+//        }
+//    }
 
     static func convertMass(mass: Mass, toUnit unit: MassUnit) -> Mass {
         return Mass(quantity: mass.quantity * mass.unit.factor / unit.factor, unit: unit)
@@ -40,13 +45,17 @@ struct Mass {
     }
 
     // O(n)
-    func fromString(string: String, quantity: Double) -> Mass? {
+    static func fromString(string: String, quantity: Double) -> Mass? {
         // NOT IMPLEMENTED
         for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
             for alternative in alternativesArray {
-                if let actualMassUnit = MassUnit(rawValue: alternative) {
-                    return Mass(quantity: quantity, unit: actualMassUnit)
+                if (alternative == string ) {
+                    println("alternative was \(alternative)")
+                    if let actualMassUnit = MassUnit(rawValue: key) {
+                        return Mass(quantity: quantity, unit: actualMassUnit)
+                    }
                 }
+                println("alternative was \(alternative)")
             }
         }
         return nil
