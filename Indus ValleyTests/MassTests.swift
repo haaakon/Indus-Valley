@@ -45,6 +45,18 @@ class MassTests: XCTestCase {
         XCTAssert(oneKilogram.unit == MassUnit.Kilo, "one kilogram did not get correct unit")
     }
 
+    func testCreateGramMassFromString() {
+        let mass = Mass(quantity: 1, unitAsString: "g")
+        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass")
+        XCTAssertTrue(mass?.unit == MassUnit.Gram, "couldn't create correct mass")
+
+    }
+    func testCreateGramMassFromAlternativeNameString() {
+        let mass = Mass(quantity: 1, unitAsString: "gram")
+        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass")
+        XCTAssertTrue(mass?.unit == MassUnit.Gram, "couldn't create correct mass")
+    }
+
     func testConvertGramToKilogram() {
         var kilogram = Mass(quantity: 1000, unit: MassUnit.Gram)
         kilogram.convert(toUnit: .Kilo)
@@ -61,9 +73,8 @@ class MassTests: XCTestCase {
 
 
     /**
-    ADDING
+    Adding
     */
-
     func testAddGramToKilogram() {
         let singleGram = Mass(quantity: 1, unit: .Gram)
         let singleKilogram = Mass(quantity: 1, unit: .Kilo)
@@ -84,6 +95,9 @@ class MassTests: XCTestCase {
         MassTests.add(singleOunce, withMass: singleKilogram, expect: Mass(quantity: 36.2739619, unit: .Ounce))
     }
 
+    /**
+     Naming
+    */
     func testAlternativeNames() {
         let mass = Mass(quantity: 1, unit: .Kilo)
         let names = mass.alternativeNames()
@@ -98,10 +112,10 @@ class MassTests: XCTestCase {
         XCTAssertFalse(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kilograms))
     }
 
-    // convenience method for testing add
+    // convenience method for testing add with an expected value
     class func add(mass : Mass, withMass: Mass, expect: Mass) {
         let addedTogether = mass + withMass
-        XCTAssert(addedTogether.quantity == expect.quantity, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected \(expect.quantity), got \(addedTogether.quantity)  ")
+        XCTAssertEqualWithAccuracy(addedTogether.quantity, expect.quantity, 0.0001, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected \(expect.quantity), got \(addedTogether.quantity)  ")
         XCTAssert(addedTogether.unit == expect.unit, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected  \(expect.unit), got  \(addedTogether.unit) ")
     }
 

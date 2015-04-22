@@ -1,4 +1,4 @@
-//
+
 //  Mass.swift
 //  Indus Valley
 //
@@ -18,9 +18,13 @@ struct Mass {
         self.unit = unit
     }
 
-    init(quantity: Double, unitAsString: String) {
-        let massUnit = MassUnit(rawValue: unitAsString)
-        self.init(quantity: quantity, unit: massUnit!)
+    init?(quantity: Double, unitAsString: String) {
+        if let massUnit = MassUnit(rawValue: unitAsString) {
+            self.init(quantity: quantity, unit: massUnit)
+        }else {
+            return nil
+        }
+
     }
 
     static func convertMass(mass: Mass, toUnit unit: MassUnit) -> Mass {
@@ -35,11 +39,18 @@ struct Mass {
         return Mass.convertMass(self, toUnit: toUnit)
     }
 
+    // O(n)
     func fromString(string: String, quantity: Double) -> Mass? {
         // NOT IMPLEMENTED
+        for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
+            for alternative in alternativesArray {
+                if let actualMassUnit = MassUnit(rawValue: alternative) {
+                    return Mass(quantity: quantity, unit: actualMassUnit)
+                }
+            }
+        }
         return nil
     }
-
 }
 
 extension Mass: Printable {
