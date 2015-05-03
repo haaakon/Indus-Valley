@@ -10,6 +10,7 @@ import Foundation
 
 private let _alternativeNamesManagerManagerSharedInstance = AlternativeNamesManager()
 
+// TODO Make a binary search tree for quick lookup
 class AlternativeNamesManager {
 
     class var sharedManager: AlternativeNamesManager {
@@ -24,11 +25,12 @@ class AlternativeNamesManager {
         let jsonDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &error) as? [String : [String]]
 
         if let error = error {
-            
             return nil
         }
 
         return jsonDictionary
         }()
+
+
 
 }
