@@ -1,0 +1,24 @@
+{
+    "ml": [
+           "milliliter",
+           "ml"
+           ],
+    "g": [
+          "grams",
+          "g",
+          "gram",
+          "grammes",
+          "gramme"
+          ],
+    "tbsp": [
+             "tablespoon",
+             "tablespoons",
+             "tbsp",
+             "tb"
+             ],
+    "l": [
+          "liter",
+          "litre",
+          "l"
+          ]
+}
