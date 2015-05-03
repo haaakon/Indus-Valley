@@ -1,22 +1,15 @@
 {
     "g": [
-          "grams",
-          "g",
           "gram",
-          "grammes",
-          "gramme"
+          "g",
+          "gr",
           ],
     "kg": [
-           "kilos",
            "kilogram",
            "kg",
-           "kgs",
-           "kilograms"
            ],
     "t": [
-          "tonnes",
-          "ton",
-          "tons",
+          "tonn",
           "t"
           ]
 }
