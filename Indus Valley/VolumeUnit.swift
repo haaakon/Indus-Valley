@@ -10,16 +10,18 @@ import Foundation
 
 enum VolumeUnit : String {
 
-    case Millilitre      =         "ml"
+    case Milliliter      =         "ml"
+    case Gram      =               "g"
     case Tablespoon      =         "tbsp"
     case Litre           =         "l"
 
     var factor : Double {
         return {
             switch self {
-            case Millilitre:       return             1.0
-            case Tablespoon:       return            15.0
-            case Litre:            return          1000.0
+            case Milliliter:       return               1.0
+            case Gram:             return               1.0   // gram in volume equals 1 ml
+            case Tablespoon:       return              15.0
+            case Litre:            return            1000.0
             }
 
             }()
