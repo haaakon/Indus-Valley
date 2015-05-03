@@ -18,20 +18,6 @@ struct Mass {
         self.unit = unit
     }
 
-//    init?(quantity: Double, unitAsString: String) {
-//        if let massUnit = MassUnit(rawValue: unitAsString) {
-//            for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
-//                for alternative in alternativesArray {
-//                    if let actualMassUnit = MassUnit(rawValue: alternative) {
-//                        self.init(quantity: quantity, unit: actualMassUnit)
-//                    }
-//                }
-//            }
-//        }
-//            return nil
-//        }
-//    }
-
     static func convertMass(mass: Mass, toUnit unit: MassUnit) -> Mass {
         return Mass(quantity: mass.quantity * mass.unit.factor / unit.factor, unit: unit)
     }
@@ -46,16 +32,13 @@ struct Mass {
 
     // O(n)
     static func fromString(string: String, quantity: Double) -> Mass? {
-        // NOT IMPLEMENTED
         for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
             for alternative in alternativesArray {
                 if (alternative == string ) {
-                    println("alternative was \(alternative)")
                     if let actualMassUnit = MassUnit(rawValue: key) {
                         return Mass(quantity: quantity, unit: actualMassUnit)
                     }
                 }
-                println("alternative was \(alternative)")
             }
         }
         return nil
