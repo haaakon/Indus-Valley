@@ -29,11 +29,11 @@
 		EC3B4C551AE3D4B500342628 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C531AE3D4B500342628 /* Volume.swift */; };
 		EC3B4C571AE3D69300342628 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C561AE3D69300342628 /* Measurement.swift */; };
 		EC3B4C581AE3D69300342628 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C561AE3D69300342628 /* Measurement.swift */; };
-		EC3B4C5A1AE3DE7200342628 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C591AE3DE7200342628 /* Unit.swift */; };
-		EC3B4C5B1AE3DE7200342628 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C591AE3DE7200342628 /* Unit.swift */; };
 		EC3B4C6A1AE3E56800342628 /* MassAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */; };
 		EC3B4C6B1AE3E56800342628 /* MassAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */; };
 		EC65BE541AEF759600E9B46F /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC65BE521AEF759600E9B46F /* Arbitrary.swift */; };
+		ECE3E3761AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */; };
+		ECE3E3771AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +66,11 @@
 		EC3B4C511AE3C0F700342628 /* MassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassTests.swift; sourceTree = "<group>"; };
 		EC3B4C531AE3D4B500342628 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		EC3B4C561AE3D69300342628 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
-		EC3B4C591AE3DE7200342628 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
-		EC3B4C691AE3E56800342628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/MassAlternativeNames.json; sourceTree = "<group>"; };
 		EC3B4C6C1AE3E56F00342628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/MassAlternativeNames.json; sourceTree = "<group>"; };
 		EC65BE521AEF759600E9B46F /* Arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Arbitrary.swift; path = "../Indus Valley/Arbitrary.swift"; sourceTree = "<group>"; };
+		ECE3E3781AF64A65003ED924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/VolumeAlternativeNames.json; sourceTree = "<group>"; };
+		ECE3E37B1AF64AAD003ED924 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = nb; path = nb.lproj/MassAlternativeNames.json; sourceTree = "<group>"; };
+		ECE3E37C1AF64AAD003ED924 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = nb; path = nb.lproj/VolumeAlternativeNames.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +119,12 @@
 				EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */,
 				EC3B4C481AE3C03C00342628 /* MassUnit.swift */,
 				EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */,
+				ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */,
 				EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */,
 				EC3B4C4B1AE3C05700342628 /* VolumeUnit.swift */,
-				EC3B4C591AE3DE7200342628 /* Unit.swift */,
 				EC3B4C4E1AE3C07F00342628 /* Mass.swift */,
-				EC37D21E1AE538F400507465 /* Mass+JSON.swift */,
 				EC3B4C531AE3D4B500342628 /* Volume.swift */,
+				EC37D21E1AE538F400507465 /* Mass+JSON.swift */,
 				EC3B4C561AE3D69300342628 /* Measurement.swift */,
 				EC3B4C261AE3BF0100342628 /* Supporting Files */,
 			);
@@ -220,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nb,
 			);
 			mainGroup = EC3B4C1A1AE3BF0100342628;
 			productRefGroup = EC3B4C241AE3BF0100342628 /* Products */;
@@ -239,6 +241,7 @@
 			files = (
 				EC3B4C2E1AE3BF0100342628 /* Main.storyboard in Resources */,
 				EC3B4C331AE3BF0200342628 /* LaunchScreen.xib in Resources */,
+				ECE3E3761AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */,
 				EC3B4C6A1AE3E56800342628 /* MassAlternativeNames.json in Resources */,
 				EC3B4C301AE3BF0100342628 /* Images.xcassets in Resources */,
 			);
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE3E3771AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */,
 				EC3B4C6B1AE3E56800342628 /* MassAlternativeNames.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +270,6 @@
 				EC37D2221AE53E5400507465 /* AlternativeNamesManager.swift in Sources */,
 				EC3B4C541AE3D4B500342628 /* Volume.swift in Sources */,
 				EC3B4C4C1AE3C05700342628 /* VolumeUnit.swift in Sources */,
-				EC3B4C5A1AE3DE7200342628 /* Unit.swift in Sources */,
 				EC3B4C4F1AE3C07F00342628 /* Mass.swift in Sources */,
 				EC3B4C571AE3D69300342628 /* Measurement.swift in Sources */,
 			);
@@ -284,7 +287,6 @@
 				EC37D2231AE53E5400507465 /* AlternativeNamesManager.swift in Sources */,
 				EC3B4C551AE3D4B500342628 /* Volume.swift in Sources */,
 				EC3B4C4A1AE3C03C00342628 /* MassUnit.swift in Sources */,
-				EC3B4C5B1AE3DE7200342628 /* Unit.swift in Sources */,
 				EC3B4C4D1AE3C05700342628 /* VolumeUnit.swift in Sources */,
 				EC65BE541AEF759600E9B46F /* Arbitrary.swift in Sources */,
 				EC3B4C581AE3D69300342628 /* Measurement.swift in Sources */,
@@ -321,10 +323,19 @@
 		EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC3B4C691AE3E56800342628 /* Base */,
 				EC3B4C6C1AE3E56F00342628 /* en */,
+				ECE3E37B1AF64AAD003ED924 /* nb */,
 			);
 			name = MassAlternativeNames.json;
+			sourceTree = "<group>";
+		};
+		ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECE3E3781AF64A65003ED924 /* en */,
+				ECE3E37C1AF64AAD003ED924 /* nb */,
+			);
+			name = VolumeAlternativeNames.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
