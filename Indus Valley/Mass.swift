@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Mass {
+struct Mass : Measurement {
 
     let quantity : Double
     let unit  : MassUnit
@@ -18,16 +18,16 @@ struct Mass {
         self.unit = unit
     }
 
-    static func convertMass(mass: Mass, toUnit unit: MassUnit) -> Mass {
+    static func convert(mass: Mass, toUnit unit: MassUnit) -> Mass {
         return Mass(quantity: mass.quantity * mass.unit.factor / unit.factor, unit: unit)
     }
 
     mutating func convert(#toUnit: MassUnit) {
-        self = Mass.convertMass(self, toUnit: toUnit)
+        self = Mass.convert(self, toUnit: toUnit)
     }
 
     func converted(#toUnit: MassUnit) -> Mass {
-        return Mass.convertMass(self, toUnit: toUnit)
+        return Mass.convert(self, toUnit: toUnit)
     }
 
     // O(n)
@@ -51,12 +51,3 @@ extension Mass: Printable {
     }
 }
 
-func + (left:Mass, right:Mass) -> Mass {
-    let newRightValue = right.converted(toUnit: left.unit)
-    return  Mass(quantity: left.quantity + newRightValue.quantity, unit: left.unit)
-}
-
-func - (left:Mass, right:Mass) -> Mass {
-    let newRightValue = right.converted(toUnit: left.unit)
-    return  Mass(quantity: left.quantity - newRightValue.quantity, unit: left.unit)
-}

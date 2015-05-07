@@ -31,6 +31,7 @@
 		EC3B4C6B1AE3E56800342628 /* MassAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */; };
 		EC65BE541AEF759600E9B46F /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC65BE521AEF759600E9B46F /* Arbitrary.swift */; };
 		EC677DDC1AF658810046AE2B /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC677DDB1AF658810046AE2B /* MassUnit.swift */; };
+		ECB372A21AFBF10F002CCE64 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC677DDB1AF658810046AE2B /* MassUnit.swift */; };
 		ECE3E3761AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */; };
 		ECE3E3771AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */; };
 /* End PBXBuildFile section */
@@ -119,12 +120,12 @@
 				EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */,
 				ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */,
 				EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */,
+				EC3B4C561AE3D69300342628 /* Measurement.swift */,
 				EC3B4C4E1AE3C07F00342628 /* Mass.swift */,
 				EC677DDB1AF658810046AE2B /* MassUnit.swift */,
 				EC3B4C4B1AE3C05700342628 /* VolumeUnit.swift */,
 				EC3B4C531AE3D4B500342628 /* Volume.swift */,
 				EC37D21E1AE538F400507465 /* Mass+JSON.swift */,
-				EC3B4C561AE3D69300342628 /* Measurement.swift */,
 				EC3B4C261AE3BF0100342628 /* Supporting Files */,
 			);
 			path = "Indus Valley";
@@ -282,6 +283,7 @@
 				EC3B4C521AE3C0F700342628 /* MassTests.swift in Sources */,
 				EC0D2DF21AE833DE00595A61 /* XCTestCase+Helper.swift in Sources */,
 				EC37D2201AE538F400507465 /* Mass+JSON.swift in Sources */,
+				ECB372A21AFBF10F002CCE64 /* MassUnit.swift in Sources */,
 				EC3B4C501AE3C07F00342628 /* Mass.swift in Sources */,
 				EC37D2231AE53E5400507465 /* AlternativeNamesManager.swift in Sources */,
 				EC3B4C551AE3D4B500342628 /* Volume.swift in Sources */,
