@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Measurement {
+//protocol UnitProtocol {
 
 //    var quantity : Double { get set }
 //    var unit : String? { get set }
@@ -17,12 +17,12 @@ protocol Measurement {
 
 //    static func convert(measurement: Measurement, toUnit unit: String) -> Measurement
 
-    mutating func convert(#toUnit:String)
+//    mutating func convert(#toUnit:String)
 
     //    mutating func convert(#toUnit: MassUnit) {
     //        self = Mass.convertMass(self, toUnit: toUnit)
     //    }
-}
+//}
 
 
 //func +<T: Measurement> (left:T, right:T) -> Measurement {

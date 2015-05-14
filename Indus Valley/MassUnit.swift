@@ -9,7 +9,7 @@
 import Foundation
 
 // SI units
-enum MassUnit : String {
+enum MassUnit : String, UnitProtocol {
 
     case Milligram   =        "mg"
     case Gram        =        "g"
@@ -17,6 +17,7 @@ enum MassUnit : String {
     case Pound       =        "lb"
     case Kilo        =        "kg"
     case Ton         =        "t"
+
 
     var factor: Double {
         return  {
