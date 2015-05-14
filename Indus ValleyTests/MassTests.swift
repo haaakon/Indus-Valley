@@ -38,43 +38,57 @@ class MassTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+
     func testCreateMass() {
         let oneKilogram = Mass(quantity: 1, unit: MassUnit.Kilo)
         XCTAssert(oneKilogram.quantity == 1, "one kilogram was not set with correct value")
         XCTAssert(oneKilogram.unit == MassUnit.Kilo, "one kilogram did not get correct unit")
     }
-    
+//
     func testCreateGramMassFromString() {
         let mass = Mass(quantity: 1, unit: "g")
         XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass")
         XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"g\", got \(mass?.unit)")
     }
+
+    func testCreateGramMassFromAlternativeNameString() {
+        let mass = Mass(quantity: 1, unit: "grams")
+        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass, expected quantity 1, got \(mass?.quantity)")
+        XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"gram\", got \(mass?.unit)")
+    }
+
+    func testCreateGramMassFromAlternativeNameString2() {
+        let mass = Mass(quantity: 1, unit: "gram")
+        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass, expected quantity 1, got \(mass?.quantity)")
+        XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"grams\", got \(mass?.unit)")
+    }
+
+    /**
+    Negative testing
+    */
+
+    func testShouldNotCreateMassFromString() {
+        let notAMass = Mass(quantity: 3, unit: "not a mass")
+        XCTAssertFalse(notAMass?.quantity == 3 , "invalid mass should not have a quantity")
+        XCTAssertFalse(notAMass?.unit == MassUnit.Gram, "invalid mass should not have a unit")
+        XCTAssertTrue(notAMass == nil, "not a mass should be nil")
+    }
+
 //
-//    func testCreateGramMassFromAlternativeNameString() {
-//        let mass = Mass.fromString("gram", quantity: 1)
-//        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass, expected quantity 1, got \(mass?.quantity)")
-//        XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"gram\", got \(mass?.unit)")
-//    }
+
+    func testConvertGramToKilogram() {
+        var grams = Mass(quantity: 1000, unit: MassUnit.Gram)
+        let convertedToKilo = grams.convert(toUnit: MassUnit.Kilo)
+        XCTAssert(convertedToKilo.quantity == 1, "could not convert to kilo, expected \(1), got \(convertedToKilo.quantity)")
+        XCTAssert(convertedToKilo.unit == MassUnit.Kilo, "could not convert gram to kil, expected Kilo, got \(convertedToKilo.unit)")
+    }
 //
-//    func testCreateGramMassFromAlternativeNameString2() {
-//        let mass = Mass.fromString("grams", quantity: 1)
-//        XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass, expected quantity 1, got \(mass?.quantity)")
-//        XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"grams\", got \(mass?.unit)")
-//    }
-//
-//    func testConvertGramToKilogram() {
-//        var kilogram = Mass(quantity: 1000, unit: MassUnit.Gram)
-//        kilogram.convert(toUnit: .Kilo)
-//        XCTAssert(kilogram.quantity == 1, "could not convert to kilo, expected \(1), got \(kilogram.quantity)")
-//        XCTAssert(kilogram.unit == MassUnit.Kilo, "could not convert gram to kil, expected Kilo, got \(kilogram.unit)")
-//    }
-//
-//    func testConvertKiloToGram() {
-//        var gram = Mass(quantity: 1, unit: .Kilo)
-//        gram.convert(toUnit: .Gram)
-//        XCTAssert(gram.quantity == 1000, "could not convert to gram, expected \(1000), got \(gram.quantity)")
-//        XCTAssert(gram.unit == MassUnit.Gram, "could not convert kilogram to grams, expected Gram, got \(gram.unit)")
-//    }
+    func testConvertKiloToGram() {
+        var gram = Mass(quantity: 1, unit: .Kilo)
+        let convertedGram = gram.convert(toUnit: MassUnit.Gram)
+        XCTAssert(convertedGram.quantity == 1000, "could not convert to gram, expected \(1000), got \(gram.quantity)")
+        XCTAssert(convertedGram.unit == MassUnit.Gram, "could not convert kilogram to grams, expected Gram, got \(gram.unit)")
+    }
 //
 //
 //    /**
