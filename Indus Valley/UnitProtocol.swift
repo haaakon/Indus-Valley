@@ -8,8 +8,11 @@
 
 import Foundation
 
-protocol UnitProtocol {
+typealias UnitType = UnitProtocol
 
+protocol UnitProtocol  {
+
+    var rawValue : String { get }
     var factor: Double { get }
     init?(rawValue: String)
     

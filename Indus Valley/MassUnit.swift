@@ -32,6 +32,10 @@ enum MassUnit : String, UnitProtocol {
             }()
     }
 
+//    var rawValue : String {
+//        return self.rawValue
+//    }
+
     var alternativeNames : [String]? {
         return {
             self.alternativeStrings(self.rawValue)
@@ -45,11 +49,17 @@ enum MassUnit : String, UnitProtocol {
         return separatedAlternatives
     }
 
-
     static func allValues() {
         var values = [MassUnit]()
     }
 
+}
+
+func == (lhs: MassUnit?, rhs : UnitProtocol?) -> Bool {
+    return lhs?.rawValue == rhs?.rawValue
+}
+func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
+    return lhs?.rawValue == rhs?.rawValue
 }
 
 extension MassUnit: Printable {

@@ -8,15 +8,19 @@
 
 import Foundation
 
-protocol UnitConstruct {
+class UnitConstruct {
     
-    typealias UnitType: UnitProtocol
+    var quantity: Double
+    var unit : UnitProtocol
 
-    var quantity: Double   { get }
-    var unit  : UnitType { get }
+    init(quantity: Double, unit: UnitProtocol) {
+        self.quantity = quantity
+        self.unit = unit
+    }
 
-    init(quantity: Double, unit: UnitType)
-
-    init?(quantity: Double, unit: String)
+    func convert(#toUnit : UnitProtocol) -> UnitConstruct {
+        let newUnit = UnitConstruct(quantity:  self.quantity * self.unit.factor / toUnit.factor, unit: toUnit)
+        return newUnit
+    }
 
 }
