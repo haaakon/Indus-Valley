@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Mass : UnitConstruct {
+class Mass : Measurement {
 
     init(quantity: Double, unit: MassUnit) {
         super.init(quantity: quantity, unit: unit)
@@ -34,6 +34,10 @@ class Mass : UnitConstruct {
             super.init(quantity: -99999, unit: MassUnit.Gram)
             return nil
         }
+    }
+
+    required init(quantity: Double, unit: UnitProtocol) {
+        super.init(quantity: quantity, unit: unit)
     }
 }
 

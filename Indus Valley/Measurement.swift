@@ -8,19 +8,29 @@
 
 import Foundation
 
-class UnitConstruct {
+class Measurement {
     
     var quantity: Double
     var unit : UnitProtocol
 
-    init(quantity: Double, unit: UnitProtocol) {
+    required init(quantity: Double, unit: UnitProtocol) {
         self.quantity = quantity
         self.unit = unit
     }
 
-    func convert(#toUnit : UnitProtocol) -> UnitConstruct {
-        let newUnit = UnitConstruct(quantity:  self.quantity * self.unit.factor / toUnit.factor, unit: toUnit)
+    func convert(#toUnit : UnitProtocol) -> Self {
+        let newUnit = self.dynamicType(quantity:  self.quantity * self.unit.factor / toUnit.factor, unit: toUnit)
         return newUnit
     }
 
 }
+
+//func +<T: Measurement> (left:T, right:T) -> Measurement {
+//    let newRightValue  = right.convert(toUnit: left.unit)
+//    return T(quantity: left.quantity + newRightValue.quantity , unit: left.unit)
+//}
+
+//func - (left:Mass, right:Mass) -> Mass {
+//    let newRightValue = right.converted(toUnit: left.unit)
+//    return  Mass(quantity: left.quantity - newRightValue.quantity, unit: left.unit)
+//}
