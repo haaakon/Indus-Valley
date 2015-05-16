@@ -88,71 +88,72 @@ class MassTests: XCTestCase {
         let convertedGram = gram.convert(toUnit: MassUnit.Gram)
         XCTAssert(convertedGram.quantity == 1000, "could not convert to gram, expected \(1000), got \(gram.quantity)")
         XCTAssert(convertedGram.unit == MassUnit.Gram, "could not convert kilogram to grams, expected Gram, got \(gram.unit)")
+//        XCTAssertNotNil(convertedGram as? Mass, "after convertion, class got mixed up")
+
     }
 //
 //
 //    /**
 //    Adding
 //    */
-//    func testAddGramToKilogram() {
-//        let singleGram = Mass(quantity: 1, unit: .Gram)
-//        let singleKilogram = Mass(quantity: 1, unit: .Kilo)
-////        let addedTogether = singleGram + singleKilogram
-////        XCTAssert(addedTogether.quantity == 1001, "1 gram + 1 kilo, value should be 1001 gram, was \(addedTogether.quantity)")
-////        XCTAssert(addedTogether.unit == .Gram, "1 gram + 1 kilo, unit should be gram, was \(addedTogether.unit)")
-//    }
-//
-//    func testAddGramToGram() {
-//        let singleGram = Mass(quantity: 1, unit: .Gram)
-//        let lotsOfGrams = Mass(quantity: 99, unit: .Gram)
-//        MassTests.add(singleGram, withMass: lotsOfGrams, expect: Mass(quantity: 100, unit: .Gram))
-//    }
-//
-//
-//    func testAddGramToOunce() {
-//        let singleGram = Mass(quantity: 1, unit: .Gram)
-//        let singleOunce = Mass(quantity: 1, unit: .Ounce)
-//        MassTests.add(singleGram, withMass: singleOunce, expect: Mass(quantity:29.3495231, unit: .Gram))
-//    }
-//
-//    func testAddOunceToKilo() {
-//        let singleOunce = Mass(quantity: 1, unit: .Ounce)
-//        let singleKilogram = Mass(quantity: 1, unit: .Kilo)
-//        MassTests.add(singleOunce, withMass: singleKilogram, expect: Mass(quantity: 36.2739619, unit: .Ounce))
-//    }
-//
+    func testAddGramToKilogram() {
+        let singleGram = Mass(quantity: 1, unit: .Gram)
+        let singleKilogram = Mass(quantity: 1, unit: .Kilo)
+        let addedTogether = singleGram + singleKilogram
+        XCTAssert(addedTogether.quantity == 1001, "1 gram + 1 kilo, value should be 1001 gram, was \(addedTogether.quantity)")
+        XCTAssert(addedTogether.unit == .Gram, "1 gram + 1 kilo, unit should be gram, was \(addedTogether.unit)")
+    }
+
+    func testAddGramToGram() {
+        let singleGram = Mass(quantity: 1, unit: .Gram)
+        let lotsOfGrams = Mass(quantity: 99, unit: .Gram)
+        MassTests.add(singleGram, withMass: lotsOfGrams, expect: Mass(quantity: 100, unit: .Gram))
+    }
+
+    func testAddGramToOunce() {
+        let singleGram = Mass(quantity: 1, unit: .Gram)
+        let singleOunce = Mass(quantity: 1, unit: .Ounce)
+        MassTests.add(singleGram, withMass: singleOunce, expect: Mass(quantity:29.3495231, unit: .Gram))
+    }
+
+    func testAddOunceToKilo() {
+        let singleOunce = Mass(quantity: 1, unit: .Ounce)
+        let singleKilogram = Mass(quantity: 1, unit: .Kilo)
+        MassTests.add(singleOunce, withMass: singleKilogram, expect: Mass(quantity: 36.2739619, unit: .Ounce))
+    }
+
 //    /**
 //     Naming
 //    */
-//    func testAlternativeNames() {
-//        let mass = Mass(quantity: 1, unit: .Kilo)
-//        let names = mass.alternativeNames()
-//        XCTAssertTrue(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kgs))
-//        XCTAssertTrue(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kg))
-//    }
+    func testAlternativeNames() {
+        let mass = Mass(quantity: 1, unit: .Kilo)
+        let names = mass.alternativeNames()
+        XCTAssertTrue(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kgs))
+        XCTAssertTrue(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kg))
+    }
+
+    func testWrongAlternativeNames() {
+        let mass = Mass(quantity: 1, unit: .Gram)
+        let names = mass.alternativeNames()
+        XCTAssertFalse(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kgs))
+        XCTAssertFalse(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kilograms))
+    }
 //
-//    func testWrongAlternativeNames() {
-//        let mass = Mass(quantity: 1, unit: .Gram)
-//        let names = mass.alternativeNames()
-//        XCTAssertFalse(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kgs))
-//        XCTAssertFalse(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kilograms))
-//    }
-//
-//    func testPerformanceOfAlternativeName() {
-//        let randomStrings = self.arrayWithRandomCombinations()
-//        measureBlock { () -> Void in
-//            for randomCombination in randomStrings {
+    func testPerformanceOfAlternativeName() {
+        let randomStrings = self.arrayWithRandomCombinations()
+        measureBlock { () -> Void in
+            for randomCombination in randomStrings {
 //                let mass = Mass.fromString(randomCombination, quantity: 1)
-//            }
-//        }
-//
-//    }
+            }
+        }
+
+    }
 
     // convenience method for testing add with an expected value
     class func add(mass : Mass, withMass: Mass, expect: Mass) {
-//        let addedTogether = mass + withMass
-//        XCTAssertEqualWithAccuracy(addedTogether.quantity, expect.quantity, 0.0001, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected \(expect.quantity), got \(addedTogether.quantity)  ")
-//        XCTAssert(addedTogether.unit == expect.unit, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected  \(expect.unit), got  \(addedTogether.unit) ")
+        let addedTogether = mass + withMass
+        XCTAssertEqualWithAccuracy(addedTogether.quantity, expect.quantity, 0.0001, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected \(expect.quantity), got \(addedTogether.quantity)  ")
+        XCTAssert(addedTogether.unit.rawValue == expect.unit.rawValue, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected  \(expect.unit), got  \(addedTogether.unit) ")
     }
 
 }
