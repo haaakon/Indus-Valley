@@ -14,29 +14,11 @@ class Mass : Measurement {
         super.init(quantity: quantity, unit: unit)
     }
 
-    init?(quantity: Double, unit: String) {
-        let foundMassUnit : MassUnit? =  {
-//            for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
-//                for alternative in alternativesArray {
-//                    if (alternative == unit ) {
-//                        if let actualMassUnit = MassUnit(rawValue: key) {
-//                            return actualMassUnit
-//                        }
-//                    }
-//                }
-//            }
-            return nil
-            }()
-
-        if let actualUnit = foundMassUnit  {
-            super.init(quantity: quantity, unit: actualUnit)
-        } else {
-            super.init(quantity: -99999, unit: MassUnit.Gram)
-            return nil
-        }
+    required init(quantity: Double, unit: UnitProtocol) {
+        super.init(quantity: quantity, unit: unit)
     }
 
-    required init(quantity: Double, unit: UnitProtocol) {
+    required init?(quantity: Double, unit: String) {
         super.init(quantity: quantity, unit: unit)
     }
 }
