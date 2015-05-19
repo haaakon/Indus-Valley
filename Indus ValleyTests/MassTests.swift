@@ -41,11 +41,10 @@ class MassTests: XCTestCase {
 
     func testCreateMass() {
         let oneKilogram = Mass(quantity: 1, unit: MassUnit.Kilo)
-        
         XCTAssert(oneKilogram.quantity == 1, "one kilogram was not set with correct value")
         XCTAssert(oneKilogram.unit == MassUnit.Kilo, "one kilogram did not get correct unit")
     }
-//
+
     func testCreateGramMassFromString() {
         let mass = Mass(quantity: 1, unit: "g")
         XCTAssertTrue(mass?.quantity == 1, "couldn't create correct mass")
@@ -74,8 +73,6 @@ class MassTests: XCTestCase {
         XCTAssertFalse(notAMass?.unit == MassUnit.Gram, "invalid mass should not have a unit")
         XCTAssertTrue(notAMass == nil, "not a mass should be nil")
     }
-
-//
 
     func testConvertGramToKilogram() {
         var grams = Mass(quantity: 1000, unit: MassUnit.Gram)
@@ -122,16 +119,34 @@ class MassTests: XCTestCase {
         let singleKilogram = Mass(quantity: 1, unit: .Kilo)
         MassTests.add(singleOunce, withMass: singleKilogram, expect: Mass(quantity: 36.2739619, unit: .Ounce))
     }
+    /**
+    Naming
+    */
+
+    func testKilogramLongformNameFromLocalizationFile() {
+        let kilogram = Mass(quantity: 1, unit: .Kilo)
+        let kilograms = Mass(quantity: 2, unit: .Kilo)
+        let localizedPluralName = NSLocalizedString("KG_LONGFORM_PLURAL", tableName: "Mass", bundle: NSBundle(forClass: self.dynamicType), comment: "")
+        let localizedSingularName = NSLocalizedString("KG_LONGFORM_SINGULAR", tableName: "Mass", bundle: NSBundle(forClass: self.dynamicType), comment: "")
+        XCTAssertTrue(localizedPluralName == kilograms.longformUnitName, "\(localizedPluralName) did not match \(kilograms.longformUnitName)")
+        XCTAssertTrue(localizedSingularName == kilogram.longformUnitName, "\(localizedSingularName) did not match \(kilograms.longformUnitName)")
+
+    }
+
+    func testKilogramLongformNameFromKnownString() {
+        let kilogram = Mass(quantity: 1, unit: .Kilo)
+        var kilograms = Mass(quantity: 2, unit: .Kilo)
+        XCTAssertTrue("kilograms" == kilograms.longformUnitName, "\(kilograms) did not match \(kilograms.longformUnitName)")
+        XCTAssertTrue("kilogram" == kilogram.longformUnitName, "\(kilogram) did not match \(kilograms.longformUnitName)")
+    }
 
     func testPerformanceOfAlternativeName() {
         let randomStrings = self.arrayWithRandomCombinations()
         measureBlock { () -> Void in
             for randomCombination in randomStrings {
                 let mass = Mass(quantity: 4, unit: randomCombination)
-
             }
         }
-
     }
 
     // convenience method for testing add with an expected value
