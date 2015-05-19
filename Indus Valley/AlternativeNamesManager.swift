@@ -17,19 +17,19 @@ class AlternativeNamesManager {
         return _alternativeNamesManagerManagerSharedInstance
     }
 
-    lazy var massNames: [String : [String]]? = {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let path = bundle.pathForResource("MassAlternativeNames", ofType: "json")
-        let data = NSData(contentsOfFile: path!)
-        var error : NSError?
-        let jsonDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &error) as? [String : [String]]
-
-        if let error = error {
-            return nil
-        }
-
-        return jsonDictionary
-        }()
+//    lazy var massNames: [String : [String]]? = {
+//        let bundle = NSBundle(forClass: self.dynamicType)
+//        let path = bundle.pathForResource("MassAlternativeNames", ofType: "json")
+//        let data = NSData(contentsOfFile: path!)
+//        var error : NSError?
+//        let jsonDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &error) as? [String : [String]]
+//
+//        if let error = error {
+//            return nil
+//        }
+//
+//        return jsonDictionary
+//        }()
 
 
 
