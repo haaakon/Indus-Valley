@@ -41,6 +41,7 @@ class MassTests: XCTestCase {
 
     func testCreateMass() {
         let oneKilogram = Mass(quantity: 1, unit: MassUnit.Kilo)
+        
         XCTAssert(oneKilogram.quantity == 1, "one kilogram was not set with correct value")
         XCTAssert(oneKilogram.unit == MassUnit.Kilo, "one kilogram did not get correct unit")
     }
@@ -122,28 +123,12 @@ class MassTests: XCTestCase {
         MassTests.add(singleOunce, withMass: singleKilogram, expect: Mass(quantity: 36.2739619, unit: .Ounce))
     }
 
-//    /**
-//     Naming
-//    */
-    func testAlternativeNames() {
-        let mass = Mass(quantity: 1, unit: .Kilo)
-        let names = mass.alternativeNames()
-        XCTAssertTrue(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kgs))
-        XCTAssertTrue(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kg))
-    }
-
-    func testWrongAlternativeNames() {
-        let mass = Mass(quantity: 1, unit: .Gram)
-        let names = mass.alternativeNames()
-        XCTAssertFalse(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kgs))
-        XCTAssertFalse(contains(names, MassTestsConstants.UniversalAlternativeNames.Kilo.kilograms))
-    }
-//
     func testPerformanceOfAlternativeName() {
         let randomStrings = self.arrayWithRandomCombinations()
         measureBlock { () -> Void in
             for randomCombination in randomStrings {
                 let mass = Mass(quantity: 4, unit: randomCombination)
+
             }
         }
 
