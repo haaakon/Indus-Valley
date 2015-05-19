@@ -32,10 +32,10 @@
 		ECB372A51AFE9996002CCE64 /* UnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB372A31AFE9996002CCE64 /* UnitProtocol.swift */; };
 		ECB372A71AFE9F06002CCE64 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB372A61AFE9F06002CCE64 /* Measurement.swift */; };
 		ECB372A81AFE9F06002CCE64 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB372A61AFE9F06002CCE64 /* Measurement.swift */; };
-		ECFAE26C1B0BAB270029CAD0 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26B1B0BAB270029CAD0 /* Mass.strings */; };
-		ECFAE26D1B0BAB270029CAD0 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26B1B0BAB270029CAD0 /* Mass.strings */; };
 		ECFAE26F1B0BBA6D0029CAD0 /* Volume.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */; };
 		ECFAE2701B0BBA6D0029CAD0 /* Volume.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */; };
+		ECFAE2711B0BD3540029CAD0 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE2741B0BD3540029CAD0 /* Mass.strings */; };
+		ECFAE2721B0BD3540029CAD0 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE2741B0BD3540029CAD0 /* Mass.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,10 @@
 		EC677DDB1AF658810046AE2B /* MassUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassUnit.swift; sourceTree = "<group>"; };
 		ECB372A31AFE9996002CCE64 /* UnitProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProtocol.swift; sourceTree = "<group>"; };
 		ECB372A61AFE9F06002CCE64 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
-		ECFAE26B1B0BAB270029CAD0 /* Mass.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Mass.strings; path = ../Mass.strings; sourceTree = "<group>"; };
 		ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Volume.strings; sourceTree = "<group>"; };
+		ECFAE2731B0BD3540029CAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Mass.strings; sourceTree = "<group>"; };
+		ECFAE2751B0BD3A30029CAD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Mass.strings; sourceTree = "<group>"; };
+		ECFAE2761B0BD3A30029CAD0 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Mass.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,7 @@
 				EC3B4C2C1AE3BF0100342628 /* Main.storyboard */,
 				EC3B4C2F1AE3BF0100342628 /* Images.xcassets */,
 				EC2752241B07967E0007125D /* Names */,
-				ECFAE26B1B0BAB270029CAD0 /* Mass.strings */,
+				ECFAE2741B0BD3540029CAD0 /* Mass.strings */,
 				ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */,
 				EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */,
 				ECB372A31AFE9996002CCE64 /* UnitProtocol.swift */,
@@ -251,7 +253,7 @@
 			files = (
 				EC3B4C2E1AE3BF0100342628 /* Main.storyboard in Resources */,
 				EC3B4C331AE3BF0200342628 /* LaunchScreen.xib in Resources */,
-				ECFAE26C1B0BAB270029CAD0 /* Mass.strings in Resources */,
+				ECFAE2711B0BD3540029CAD0 /* Mass.strings in Resources */,
 				ECFAE26F1B0BBA6D0029CAD0 /* Volume.strings in Resources */,
 				EC3B4C301AE3BF0100342628 /* Images.xcassets in Resources */,
 			);
@@ -262,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECFAE2701B0BBA6D0029CAD0 /* Volume.strings in Resources */,
-				ECFAE26D1B0BAB270029CAD0 /* Mass.strings in Resources */,
+				ECFAE2721B0BD3540029CAD0 /* Mass.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +332,17 @@
 				EC3B4C321AE3BF0200342628 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		ECFAE2741B0BD3540029CAD0 /* Mass.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECFAE2731B0BD3540029CAD0 /* Base */,
+				ECFAE2751B0BD3A30029CAD0 /* en */,
+				ECFAE2761B0BD3A30029CAD0 /* nb */,
+			);
+			name = Mass.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
