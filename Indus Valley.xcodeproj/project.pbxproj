@@ -25,8 +25,6 @@
 		EC3B4C521AE3C0F700342628 /* MassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C511AE3C0F700342628 /* MassTests.swift */; };
 		EC3B4C541AE3D4B500342628 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C531AE3D4B500342628 /* Volume.swift */; };
 		EC3B4C551AE3D4B500342628 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3B4C531AE3D4B500342628 /* Volume.swift */; };
-		EC3B4C6A1AE3E56800342628 /* MassAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */; };
-		EC3B4C6B1AE3E56800342628 /* MassAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */; };
 		EC65BE541AEF759600E9B46F /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC65BE521AEF759600E9B46F /* Arbitrary.swift */; };
 		EC677DDC1AF658810046AE2B /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC677DDB1AF658810046AE2B /* MassUnit.swift */; };
 		ECB372A21AFBF10F002CCE64 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC677DDB1AF658810046AE2B /* MassUnit.swift */; };
@@ -34,8 +32,10 @@
 		ECB372A51AFE9996002CCE64 /* UnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB372A31AFE9996002CCE64 /* UnitProtocol.swift */; };
 		ECB372A71AFE9F06002CCE64 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB372A61AFE9F06002CCE64 /* Measurement.swift */; };
 		ECB372A81AFE9F06002CCE64 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB372A61AFE9F06002CCE64 /* Measurement.swift */; };
-		ECE3E3761AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */; };
-		ECE3E3771AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */ = {isa = PBXBuildFile; fileRef = ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */; };
+		ECFAE26C1B0BAB270029CAD0 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26B1B0BAB270029CAD0 /* Mass.strings */; };
+		ECFAE26D1B0BAB270029CAD0 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26B1B0BAB270029CAD0 /* Mass.strings */; };
+		ECFAE26F1B0BBA6D0029CAD0 /* Volume.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */; };
+		ECFAE2701B0BBA6D0029CAD0 /* Volume.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,14 +66,12 @@
 		EC3B4C4E1AE3C07F00342628 /* Mass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mass.swift; sourceTree = "<group>"; };
 		EC3B4C511AE3C0F700342628 /* MassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassTests.swift; sourceTree = "<group>"; };
 		EC3B4C531AE3D4B500342628 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
-		EC3B4C6C1AE3E56F00342628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/MassAlternativeNames.json; sourceTree = "<group>"; };
 		EC65BE521AEF759600E9B46F /* Arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Arbitrary.swift; path = "../Indus Valley/Arbitrary.swift"; sourceTree = "<group>"; };
 		EC677DDB1AF658810046AE2B /* MassUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassUnit.swift; sourceTree = "<group>"; };
 		ECB372A31AFE9996002CCE64 /* UnitProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProtocol.swift; sourceTree = "<group>"; };
 		ECB372A61AFE9F06002CCE64 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
-		ECE3E3781AF64A65003ED924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/VolumeAlternativeNames.json; sourceTree = "<group>"; };
-		ECE3E37B1AF64AAD003ED924 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = nb; path = nb.lproj/MassAlternativeNames.json; sourceTree = "<group>"; };
-		ECE3E37C1AF64AAD003ED924 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = nb; path = nb.lproj/VolumeAlternativeNames.json; sourceTree = "<group>"; };
+		ECFAE26B1B0BAB270029CAD0 /* Mass.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Mass.strings; path = ../Mass.strings; sourceTree = "<group>"; };
+		ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Volume.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC2752241B07967E0007125D /* Names */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Names;
+			sourceTree = "<group>";
+		};
 		EC3B4C1A1AE3BF0100342628 = {
 			isa = PBXGroup;
 			children = (
@@ -117,11 +122,12 @@
 			children = (
 				EC3B4C281AE3BF0100342628 /* AppDelegate.swift */,
 				EC3B4C2A1AE3BF0100342628 /* ViewController.swift */,
+				EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */,
 				EC3B4C2C1AE3BF0100342628 /* Main.storyboard */,
 				EC3B4C2F1AE3BF0100342628 /* Images.xcassets */,
-				EC3B4C311AE3BF0200342628 /* LaunchScreen.xib */,
-				EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */,
-				ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */,
+				EC2752241B07967E0007125D /* Names */,
+				ECFAE26B1B0BAB270029CAD0 /* Mass.strings */,
+				ECFAE26E1B0BBA6D0029CAD0 /* Volume.strings */,
 				EC37D2211AE53E5400507465 /* AlternativeNamesManager.swift */,
 				ECB372A31AFE9996002CCE64 /* UnitProtocol.swift */,
 				ECB372A61AFE9F06002CCE64 /* Measurement.swift */,
@@ -245,8 +251,8 @@
 			files = (
 				EC3B4C2E1AE3BF0100342628 /* Main.storyboard in Resources */,
 				EC3B4C331AE3BF0200342628 /* LaunchScreen.xib in Resources */,
-				ECE3E3761AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */,
-				EC3B4C6A1AE3E56800342628 /* MassAlternativeNames.json in Resources */,
+				ECFAE26C1B0BAB270029CAD0 /* Mass.strings in Resources */,
+				ECFAE26F1B0BBA6D0029CAD0 /* Volume.strings in Resources */,
 				EC3B4C301AE3BF0100342628 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECE3E3771AF64A65003ED924 /* VolumeAlternativeNames.json in Resources */,
-				EC3B4C6B1AE3E56800342628 /* MassAlternativeNames.json in Resources */,
+				ECFAE2701B0BBA6D0029CAD0 /* Volume.strings in Resources */,
+				ECFAE26D1B0BAB270029CAD0 /* Mass.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,24 +330,6 @@
 				EC3B4C321AE3BF0200342628 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		EC3B4C681AE3E56800342628 /* MassAlternativeNames.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC3B4C6C1AE3E56F00342628 /* en */,
-				ECE3E37B1AF64AAD003ED924 /* nb */,
-			);
-			name = MassAlternativeNames.json;
-			sourceTree = "<group>";
-		};
-		ECE3E3791AF64A65003ED924 /* VolumeAlternativeNames.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECE3E3781AF64A65003ED924 /* en */,
-				ECE3E37C1AF64AAD003ED924 /* nb */,
-			);
-			name = VolumeAlternativeNames.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,36 @@
+
+/**
+ *  Gram
+ */
+
+"G_SHORTFORM_SINGLE" = "g";
+
+"G_LONGFORM_SINGLE" = "gram";
+
+"G_LONGFORM_PLURAL" = "grams";
+
+"G_ALTERNATIVE_NAMES" = "grammes, gramme";
+
+/**
+ *  Kilogram
+ */
+
+"KG_SHORTFORM_SINGLE" = "kg";
+
+"KG_LONGFORM_SINGLE" = "kilogram";
+
+"KG_LONGFORM_PLURAL" = "kilograms";
+
+"KG_ALTERNATIVE_NAMES" = "kilo, kilos, kgs";
+
+/**
+ *  American ounce
+ */
+
+"OZ_SHORTFORM_SINGLE" = "oz";
+
+"OZ_LONGFORM_SINGLE" = "ounce";
+
+"OZ_LONGFORM_PLURAL" = "ounces";
+
+"OZ_ALTERNATIVE_NAMES" = "";

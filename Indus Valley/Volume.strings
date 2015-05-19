@@ -1,0 +1,48 @@
+
+/**
+ *  Gram
+ */
+
+"ML_SHORTFORM_SINGLE" = "ml";
+
+"ML_LONGFORM_SINGLE" = "milliliter";
+
+"ML_LONGFORM_PLURAL" = "milliliters";
+
+"ML_ALTERNATIVE_NAMES" = "millis";
+
+/**
+ *  Gram (Volume)
+ */
+
+"G_SHORTFORM_SINGLE" = "g";
+
+"G_LONGFORM_SINGLE" = "gram";
+
+"G_LONGFORM_PLURAL" = "grams";
+
+"G_ALTERNATIVE_NAMES" = "gramme, grammes";
+
+/**
+ *  Tablespoon
+ */
+
+"TBSP_SHORTFORM_SINGLE" = "tbsp";
+
+"TBSP_LONGFORM_SINGLE" = "tablespoon";
+
+"TBSP_LONGFORM_PLURAL" = "tablespoons";
+
+"TBSP_ALTERNATIVE_NAMES" = "tbs, tbsps";
+
+/**
+ *  Liter
+ */
+
+"LITER_SHORTFORM_SINGLE" = "l";
+
+"LITER_LONGFORM_SINGLE" = "liter";
+
+"LITER_LONGFORM_PLURAL" = "liters";
+
+"LITER_ALTERNATIVE_NAMES" = "litre, litres";
