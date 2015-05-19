@@ -143,7 +143,7 @@ class MassTests: XCTestCase {
         let randomStrings = self.arrayWithRandomCombinations()
         measureBlock { () -> Void in
             for randomCombination in randomStrings {
-//                let mass = Mass.fromString(randomCombination, quantity: 1)
+                let mass = Mass(quantity: 4, unit: randomCombination)
             }
         }
 
