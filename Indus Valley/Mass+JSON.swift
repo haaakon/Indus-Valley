@@ -12,11 +12,11 @@ extension Mass {
 
     func alternativeNames() -> [String] {
         let key = self.unit.rawValue
-        let massNames = AlternativeNamesManager.sharedManager.massNames
-        if let alternativeNameArray = massNames?[key] {
-            return alternativeNameArray
-        }
-
+//        let massNames = AlternativeNamesManager.sharedManager.massNames
+//        if let alternativeNameArray = massNames?[key] {
+//            return alternativeNameArray
+//        }
+//
         return [String]()
     }
 

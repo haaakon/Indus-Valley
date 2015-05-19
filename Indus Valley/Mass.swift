@@ -16,15 +16,15 @@ class Mass : Measurement {
 
     init?(quantity: Double, unit: String) {
         let foundMassUnit : MassUnit? =  {
-            for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
-                for alternative in alternativesArray {
-                    if (alternative == unit ) {
-                        if let actualMassUnit = MassUnit(rawValue: key) {
-                            return actualMassUnit
-                        }
-                    }
-                }
-            }
+//            for (key,alternativesArray) in AlternativeNamesManager.sharedManager.massNames! {
+//                for alternative in alternativesArray {
+//                    if (alternative == unit ) {
+//                        if let actualMassUnit = MassUnit(rawValue: key) {
+//                            return actualMassUnit
+//                        }
+//                    }
+//                }
+//            }
             return nil
             }()
 

@@ -32,10 +32,6 @@ enum MassUnit : String, UnitProtocol {
             }()
     }
 
-//    var rawValue : String {
-//        return self.rawValue
-//    }
-
     var alternativeNames : [String]? {
         return {
             self.alternativeStrings(self.rawValue)
