@@ -129,15 +129,15 @@ class MassTests: XCTestCase {
         let localizedPluralName = NSLocalizedString("KG_LONGFORM_PLURAL", tableName: "Mass", bundle: NSBundle(forClass: self.dynamicType), comment: "")
         let localizedSingularName = NSLocalizedString("KG_LONGFORM_SINGULAR", tableName: "Mass", bundle: NSBundle(forClass: self.dynamicType), comment: "")
         XCTAssertTrue(localizedPluralName == kilograms.longformUnitName, "\(localizedPluralName) did not match \(kilograms.longformUnitName)")
-        XCTAssertTrue(localizedSingularName == kilogram.longformUnitName, "\(localizedSingularName) did not match \(kilograms.longformUnitName)")
+        XCTAssertTrue(localizedSingularName == kilogram.longformUnitName, "\(localizedSingularName) did not match \(kilogram.longformUnitName)")
 
     }
 
     func testKilogramLongformNameFromKnownString() {
         let kilogram = Mass(quantity: 1, unit: .Kilo)
         var kilograms = Mass(quantity: 2, unit: .Kilo)
-        XCTAssertTrue("kilograms" == kilograms.longformUnitName, "\(kilograms) did not match \(kilograms.longformUnitName)")
-        XCTAssertTrue("kilogram" == kilogram.longformUnitName, "\(kilogram) did not match \(kilograms.longformUnitName)")
+        XCTAssertTrue("kilograms" == kilograms.longformUnitName, "kilograms did not match \(kilograms.longformUnitName)")
+        XCTAssertTrue("kilogram" == kilogram.longformUnitName, "kilogram did not match \(kilogram.longformUnitName)")
     }
 
     func testPerformanceOfAlternativeName() {
