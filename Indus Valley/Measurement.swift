@@ -26,7 +26,7 @@ class Measurement {
             return "PLURAL"
         }()
         let key = "\(self.unit.rawValue.uppercaseString)_LONGFORM_\(pluralOrSingular)"
-        let localizedName = NSLocalizedString(key, tableName: tableName(), bundle: NSBundle.mainBundle(), comment: "longform name of a measurement")
+        let localizedName = NSLocalizedString(key, tableName: tableName(), bundle: NSBundle(forClass: self.dynamicType), comment: "longform name of a measurement")
         return localizedName
     }
 
