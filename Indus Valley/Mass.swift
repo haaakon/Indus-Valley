@@ -8,17 +8,17 @@
 
 import Foundation
 
-class Mass : Measurement {
+public class Mass : Measurement {
 
-    init(quantity: Double, unit: MassUnit) {
+    public init(quantity: Double, unit: MassUnit) {
         super.init(quantity: quantity, unit: unit)
     }
 
-    required init(quantity: Double, unit: UnitProtocol) {
+    required public init(quantity: Double, unit: UnitProtocol) {
         super.init(quantity: quantity, unit: unit)
     }
 
-    required init?(quantity: Double, unit: String) {
+    required public init?(quantity: Double, unit: String) {
         super.init(quantity: quantity, unit: unit)
     }
 }

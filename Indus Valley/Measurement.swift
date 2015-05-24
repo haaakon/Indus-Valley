@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Measurement {
+public class Measurement {
     
     var quantity: Double
     var unit : UnitProtocol
@@ -30,12 +30,12 @@ class Measurement {
         return localizedName
     }
 
-    required init(quantity: Double, unit: UnitProtocol) {
+    required public init(quantity: Double, unit: UnitProtocol) {
         self.quantity = quantity
         self.unit = unit
     }
 
-    required init?(quantity: Double, unit: String) {
+    required public init?(quantity: Double, unit: String) {
         let bundle = NSBundle(forClass: self.dynamicType)
         let tableName = "\(self.dynamicType)".componentsSeparatedByString(".")[1]
         let path = bundle.pathForResource(tableName, ofType: "strings")

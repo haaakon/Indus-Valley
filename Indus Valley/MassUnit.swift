@@ -9,7 +9,7 @@
 import Foundation
 
 // SI units
-enum MassUnit : String, UnitProtocol {
+public enum MassUnit : String, UnitProtocol {
 
     case Milligram   =        "mg"
     case Gram        =        "g"
@@ -19,7 +19,7 @@ enum MassUnit : String, UnitProtocol {
     case Ton         =        "t"
 
 
-    var factor: Double {
+    public var factor: Double {
         return  {
             switch self {
             case .Milligram:  return         0.001
@@ -59,7 +59,7 @@ func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
 }
 
 extension MassUnit: Printable {
-    var description: String {
+    public var description: String {
         return self.rawValue
     }
 }

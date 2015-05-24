@@ -10,7 +10,7 @@ import Foundation
 
 typealias UnitType = UnitProtocol
 
-protocol UnitProtocol  {
+public protocol UnitProtocol  {
 
     var rawValue : String { get }
     var factor: Double { get }
