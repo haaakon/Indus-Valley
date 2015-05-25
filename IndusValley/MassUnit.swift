@@ -11,6 +11,7 @@ import Foundation
 // SI units
 public enum MassUnit : String, UnitProtocol {
 
+    case Unknown     =        "unknown"
     case Milligram   =        "mg"
     case Gram        =        "g"
     case Ounce       =        "oz"
@@ -28,6 +29,7 @@ public enum MassUnit : String, UnitProtocol {
             case .Pound:      return       453.59237
             case .Kilo:       return      1000.0
             case .Ton:        return   1000000.0
+            case Unknown:     return         0.0
             }
             }()
     }

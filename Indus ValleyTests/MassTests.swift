@@ -63,6 +63,12 @@ class MassTests: XCTestCase {
         XCTAssertTrue(mass?.unit == MassUnit.Gram, "Could not create mass from string \"grams\", got \(mass?.unit)")
     }
 
+    func testCreateUknonwnMass() {
+        let unknownMass = Mass(quantity: 100, unit: .Unknown)
+        XCTAssertTrue(unknownMass.quantity == 100, "couldn't create correct mass, expected quantity 100, got \(unknownMass.quantity)")
+        XCTAssertTrue(unknownMass.unit == MassUnit.Unknown, "Could not create mass with unknown unit \"\", got \(unknownMass.unit)")
+    }
+
     /**
     Negative testing
     */

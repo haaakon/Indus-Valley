@@ -10,6 +10,7 @@ import Foundation
 
 public enum VolumeUnit : String, UnitProtocol {
 
+    case Unknown         =         "unknown"
     case Milliliter      =         "ml"
     case Gram            =         "g"
     case Tablespoon      =         "tbsp"
@@ -25,6 +26,7 @@ public enum VolumeUnit : String, UnitProtocol {
             case Tablespoon:       return              15.0
             case Desilitre:        return             100.0
             case Litre:            return            1000.0
+            case Unknown:          return               0.0
             }
 
             }()
