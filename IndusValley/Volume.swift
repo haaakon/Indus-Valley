@@ -8,14 +8,17 @@
 
 import Foundation
 
-struct Volume {
+public class Volume : Measurement {
 
-    let quantity : Double
-    let unit  : VolumeUnit
-
-    init(quantity: Double, unit: VolumeUnit) {
-        self.quantity = quantity
-        self.unit = unit
+    public init(quantity: Double, unit: VolumeUnit) {
+        super.init(quantity: quantity, unit: unit)
     }
 
+    required public init(quantity: Double, unit: UnitProtocol) {
+        super.init(quantity: quantity, unit: unit)
+    }
+
+    required public init?(quantity: Double, unit: String) {
+        super.init(quantity: quantity, unit: unit)
+    }
 }

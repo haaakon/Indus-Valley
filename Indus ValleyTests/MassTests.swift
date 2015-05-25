@@ -99,7 +99,7 @@ class MassTests: XCTestCase {
         let singleKilogram = Mass(quantity: 1, unit: .Kilo)
         let addedTogether = singleGram + singleKilogram
         XCTAssert(addedTogether.quantity == 1001, "1 gram + 1 kilo, value should be 1001 gram, was \(addedTogether.quantity)")
-        XCTAssert(addedTogether.unit == .Gram, "1 gram + 1 kilo, unit should be gram, was \(addedTogether.unit)")
+        XCTAssert(addedTogether.unit == MassUnit.Gram, "1 gram + 1 kilo, unit should be gram, was \(addedTogether.unit)")
     }
 
     func testAddGramToGram() {
@@ -119,10 +119,10 @@ class MassTests: XCTestCase {
         let singleKilogram = Mass(quantity: 1, unit: .Kilo)
         MassTests.add(singleOunce, withMass: singleKilogram, expect: Mass(quantity: 36.2739619, unit: .Ounce))
     }
+
     /**
     Naming
     */
-
     func testKilogramLongformNameFromLocalizationFile() {
         let kilogram = Mass(quantity: 1, unit: .Kilo)
         let kilograms = Mass(quantity: 2, unit: .Kilo)
@@ -130,7 +130,12 @@ class MassTests: XCTestCase {
         let localizedSingularName = NSLocalizedString("KG_LONGFORM_SINGULAR", tableName: "Mass", bundle: NSBundle(forClass: self.dynamicType), comment: "")
         XCTAssertTrue(localizedPluralName == kilograms.longformUnitName, "\(localizedPluralName) did not match \(kilograms.longformUnitName)")
         XCTAssertTrue(localizedSingularName == kilogram.longformUnitName, "\(localizedSingularName) did not match \(kilogram.longformUnitName)")
+    }
 
+    func testCreateUnknownMeasurementFromString() {
+        let kilogram = Measurement.unknownUnitWithString("kg", quantity: 3)
+        XCTAssertNotNil(kilogram as? Mass, "could not create mass from unkown Unit kg")
+        XCTAssertNil(kilogram as? Volume, "kilogram should not be volume")
     }
 
     func testKilogramLongformNameFromKnownString() {

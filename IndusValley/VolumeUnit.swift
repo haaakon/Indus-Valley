@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum VolumeUnit : String {
+public enum VolumeUnit : String, UnitProtocol {
 
     case Milliliter      =         "ml"
     case Gram      =               "g"
     case Tablespoon      =         "tbsp"
     case Litre           =         "l"
 
-    var factor : Double {
+    public var factor : Double {
         return {
             switch self {
             case Milliliter:       return               1.0
@@ -26,4 +26,12 @@ enum VolumeUnit : String {
 
             }()
     }
+}
+
+func == (lhs: VolumeUnit?, rhs : UnitProtocol?) -> Bool {
+    return lhs?.rawValue == rhs?.rawValue
+}
+
+func == (lhs: UnitProtocol?, rhs : VolumeUnit?) -> Bool {
+    return lhs?.rawValue == rhs?.rawValue
 }

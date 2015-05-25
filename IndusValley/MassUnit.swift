@@ -32,28 +32,12 @@ public enum MassUnit : String, UnitProtocol {
             }()
     }
 
-    var alternativeNames : [String]? {
-        return {
-            self.alternativeStrings(self.rawValue)
-        }()
-
-    }
-
-    private func alternativeStrings(key: String) -> [String]? {
-        let alternatives = NSLocalizedString(self.rawValue, tableName: "", bundle: NSBundle.mainBundle(), value: "", comment: "")
-        let separatedAlternatives = alternatives.componentsSeparatedByString(",")
-        return separatedAlternatives
-    }
-
-    static func allValues() {
-        var values = [MassUnit]()
-    }
-
 }
 
 func == (lhs: MassUnit?, rhs : UnitProtocol?) -> Bool {
     return lhs?.rawValue == rhs?.rawValue
 }
+
 func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
     return lhs?.rawValue == rhs?.rawValue
 }

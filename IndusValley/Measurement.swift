@@ -35,11 +35,12 @@ public class Measurement {
         self.quantity = quantity
         self.unit = unit
     }
+
     class func unknownUnitWithString(unitString: String, quantity: Double) -> Measurement? {
         // find a match in any of the translation files
 
         for unitName in subclassNames() {
-            let bundle = NSBundle(forClass: self.dynamicType)
+            let bundle = NSBundle(forClass: self)
             if let path = bundle.pathForResource(unitName, ofType: "strings") {
                 let keyValueList = NSDictionary(contentsOfFile: path)
                 if let keys = keyValueList?.allKeysForObject(unitString) {
