@@ -36,6 +36,18 @@
 "TBSP_ALTERNATIVE_NAMES" = "tbs, tbsps";
 
 /**
+ *  Desilitre
+ */
+
+"DL_SHORTFORM_SINGULAR" = "dl";
+
+"DL_LONGFORM_SINGULAR" = "desilitre";
+
+"DL_LONGFORM_PLURAL" = "desilitres";
+
+"DL_ALTERNATIVE_NAMES" = "desiliter, desiliters, deciliter, deciliters, decilitre, decilitres";
+
+/**
  *  Liter
  */
 

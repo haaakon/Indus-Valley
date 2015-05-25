@@ -26,5 +26,11 @@ class VolumeTests: XCTestCase {
         XCTAssert(singleLitre.quantity == 1, "one litre was not set with correct value")
         XCTAssert(singleLitre.unit == VolumeUnit.Litre, "one litre did not get correct unit")
     }
-    
+
+    func testCreateDesilitre() {
+        let desilitre = Volume(quantity: 4, unit: .Desilitre)
+        XCTAssert(desilitre.quantity == 4, "one desilitre was not set with correct value")
+        XCTAssert(desilitre.unit == VolumeUnit.Desilitre, "one desilitre did not get correct unit")
+    }
+
 }
