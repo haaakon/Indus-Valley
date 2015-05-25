@@ -34,11 +34,11 @@ public enum MassUnit : String, UnitProtocol {
 
 }
 
-func == (lhs: MassUnit?, rhs : UnitProtocol?) -> Bool {
+public func == (lhs: MassUnit?, rhs : UnitProtocol?) -> Bool {
     return lhs?.rawValue == rhs?.rawValue
 }
 
-func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
+public func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
     return lhs?.rawValue == rhs?.rawValue
 }
 
