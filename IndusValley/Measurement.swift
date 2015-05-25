@@ -36,7 +36,7 @@ public class Measurement {
         self.unit = unit
     }
 
-    class func unknownUnitWithString(unitString: String, quantity: Double) -> Measurement? {
+    public class func unknownUnitWithString(unitString: String, quantity: Double) -> Measurement? {
         // find a match in any of the translation files
 
         for unitName in subclassNames() {
