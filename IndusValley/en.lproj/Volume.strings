@@ -39,10 +39,10 @@
  *  Liter
  */
 
-"LITER_SHORTFORM_SINGULAR" = "l";
+"L_SHORTFORM_SINGULAR" = "l";
 
-"LITER_LONGFORM_SINGULAR" = "liter";
+"L_LONGFORM_SINGULAR" = "litre";
 
-"LITER_LONGFORM_PLURAL" = "liters";
+"L_LONGFORM_PLURAL" = "litres";
 
-"LITER_ALTERNATIVE_NAMES" = "litre, litres";
+"L_ALTERNATIVE_NAMES" = "liter, liters";
