@@ -154,6 +154,16 @@ class MassTests: XCTestCase {
         }
     }
 
+    func testPerformanceOfAlternativeNameWithUnknownMeasurementClass() {
+        let randomStrings = self.arrayWithRandomCombinations()
+        measureBlock { () -> Void in
+            for randomCombination in randomStrings {
+                let mass = Measurement.unknownUnitWithString(randomCombination, quantity: 2)
+            }
+        }
+    }
+
+
     // convenience method for testing add with an expected value
     class func add(mass : Mass, withMass: Mass, expect: Mass) {
         let addedTogether = mass + withMass
