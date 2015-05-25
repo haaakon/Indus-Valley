@@ -5,19 +5,20 @@
 //  Created by Håkon Bogen on 09/05/15.
 //  Copyright (c) 2015 haaakon. All rights reserved.
 //
+//
 
 import Foundation
 
 public class Measurement {
     
-    var quantity: Double
-    var unit : UnitProtocol
+    public var quantity: Double
+    public var unit : UnitProtocol
 
     private func tableName() -> String {
         return "\(self.dynamicType)".componentsSeparatedByString(".")[1]
     }
 
-    var longformUnitName : String {
+    public var longformUnitName : String {
         let aType = self.dynamicType
         let pluralOrSingular : String = {
             if self.quantity == 1 {
@@ -33,6 +34,25 @@ public class Measurement {
     required public init(quantity: Double, unit: UnitProtocol) {
         self.quantity = quantity
         self.unit = unit
+    }
+    class func unknownUnitWithString(unitString: String, quantity: Double) -> Measurement? {
+        // find a match in any of the translation files
+
+        for unitName in subclassNames() {
+            let bundle = NSBundle(forClass: self.dynamicType)
+            if let path = bundle.pathForResource(unitName, ofType: "strings") {
+                let keyValueList = NSDictionary(contentsOfFile: path)
+                if let keys = keyValueList?.allKeysForObject(unitString) {
+                    let key = keys.first as? String
+                    if let component = key?.componentsSeparatedByString("_").first {
+                        if (unitName.rangeOfString("Mass") != nil) {
+                            return Mass(quantity: quantity, unit: component.lowercaseString)
+                        }
+                    }
+                }
+            }
+        }
+        return nil
     }
 
     required public init?(quantity: Double, unit: String) {
@@ -58,6 +78,10 @@ public class Measurement {
             self.unit = MassUnit(rawValue: "kg")!
             return nil
         }
+    }
+
+    class func subclassNames() -> [String] {
+        return ["Mass", "Volume"]
     }
 
     func convert(#toUnit : UnitProtocol) -> Self {
