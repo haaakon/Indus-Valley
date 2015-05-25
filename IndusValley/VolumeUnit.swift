@@ -31,10 +31,10 @@ public enum VolumeUnit : String, UnitProtocol {
     }
 }
 
-func == (lhs: VolumeUnit?, rhs : UnitProtocol?) -> Bool {
+public func == (lhs: VolumeUnit?, rhs : UnitProtocol?) -> Bool {
     return lhs?.rawValue == rhs?.rawValue
 }
 
-func == (lhs: UnitProtocol?, rhs : VolumeUnit?) -> Bool {
+public func == (lhs: UnitProtocol?, rhs : VolumeUnit?) -> Bool {
     return lhs?.rawValue == rhs?.rawValue
 }
