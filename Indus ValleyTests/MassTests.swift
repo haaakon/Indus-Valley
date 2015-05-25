@@ -111,7 +111,7 @@ class MassTests: XCTestCase {
     func testAddGramToOunce() {
         let singleGram = Mass(quantity: 1, unit: .Gram)
         let singleOunce = Mass(quantity: 1, unit: .Ounce)
-        MassTests.add(singleGram, withMass: singleOunce, expect: Mass(quantity:29.3495231, unit: .Gram))
+        MassTests.add(singleGram, withMass: singleOunce, expect: Mass(quantity: 29.3495231, unit: .Gram))
     }
 
     func testAddOunceToKilo() {
