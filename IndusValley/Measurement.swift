@@ -47,6 +47,8 @@ public class Measurement {
                     if let component = key?.componentsSeparatedByString("_").first {
                         if (unitName.rangeOfString("Mass") != nil) {
                             return Mass(quantity: quantity, unit: component.lowercaseString)
+                        } else if (unitName.rangeOfString("Volume") != nil) {
+                            return Volume(quantity: quantity, unit: component.lowercaseString)
                         }
                     }
                 }
@@ -66,6 +68,8 @@ public class Measurement {
                 if let component = key?.componentsSeparatedByString("_").first {
                     if (tableName.rangeOfString("Mass") != nil) {
                         return MassUnit(rawValue: component.lowercaseString)
+                    }else if (tableName.rangeOfString("Volume") != nil) {
+                        return VolumeUnit(rawValue: component.lowercaseString)
                     }
                 }
             }
