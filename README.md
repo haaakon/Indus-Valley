@@ -30,17 +30,6 @@ let lotsOfGrams = Mass(quantity: 99, unit: .Gram)
 let result = singleGram + lotsOfGrams                     // result is Mass with quantity: 100, unit: .Gram
 ```
 
-###
-
-#### Blind creation
-```swift
-let aMass = Measurement.unknownUnitWithString("kilogram", quantity: 3) // class: Mass, quantity: 3, unit: .Kilo
-let anotherMass = Measurement.unknownUnitWithString("pizza", quantity: 3) // nil
-let aVolume = Measurement.unknownUnitWithString("l", quantity: 3) //  class: Volume, quantity: 3, unit: .Liter
-```
-
-
-
 #Under construction
 
 # TODO:
