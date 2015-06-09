@@ -19,6 +19,9 @@ public enum MassUnit : String, UnitProtocol {
     case Kilo        =        "kg"
     case Ton         =        "t"
 
+    public var RawValue : String {
+        return self.rawValue
+    }
 
     public var factor: Double {
         return  {
@@ -32,19 +35,20 @@ public enum MassUnit : String, UnitProtocol {
             case Unknown:     return         0.0
             }
             }()
-    }
 
+    }
+    
 }
 
 public func == (lhs: MassUnit?, rhs : UnitProtocol?) -> Bool {
-    return lhs?.rawValue == rhs?.rawValue
+    return lhs?.RawValue == rhs?.RawValue
 }
 
 public func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
-    return lhs?.rawValue == rhs?.rawValue
+    return lhs?.RawValue == rhs?.RawValue
 }
 
-extension MassUnit: Printable {
+extension MassUnit: CustomStringConvertible {
     public var description: String {
         return self.rawValue
     }

@@ -81,14 +81,14 @@ class MassTests: XCTestCase {
     }
 
     func testConvertGramToKilogram() {
-        var grams = Mass(quantity: 1000, unit: MassUnit.Gram)
+        let grams = Mass(quantity: 1000, unit: MassUnit.Gram)
         let convertedToKilo = grams.convert(toUnit: MassUnit.Kilo)
         XCTAssert(convertedToKilo.quantity == 1, "could not convert to kilo, expected \(1), got \(convertedToKilo.quantity)")
         XCTAssert(convertedToKilo.unit == MassUnit.Kilo, "could not convert gram to kil, expected Kilo, got \(convertedToKilo.unit)")
     }
 //
     func testConvertKiloToGram() {
-        var gram = Mass(quantity: 1, unit: .Kilo)
+        let gram = Mass(quantity: 1, unit: .Kilo)
         let convertedGram = gram.convert(toUnit: MassUnit.Gram)
         XCTAssert(convertedGram.quantity == 1000, "could not convert to gram, expected \(1000), got \(gram.quantity)")
         XCTAssert(convertedGram.unit == MassUnit.Gram, "could not convert kilogram to grams, expected Gram, got \(gram.unit)")
@@ -146,7 +146,7 @@ class MassTests: XCTestCase {
 
     func testKilogramLongformNameFromKnownString() {
         let kilogram = Mass(quantity: 1, unit: .Kilo)
-        var kilograms = Mass(quantity: 2, unit: .Kilo)
+        let kilograms = Mass(quantity: 2, unit: .Kilo)
         XCTAssertTrue("kilograms" == kilograms.longformUnitName, "kilograms did not match \(kilograms.longformUnitName)")
         XCTAssertTrue("kilogram" == kilogram.longformUnitName, "kilogram did not match \(kilogram.longformUnitName)")
     }
@@ -155,7 +155,7 @@ class MassTests: XCTestCase {
         let randomStrings = self.arrayWithRandomCombinations()
         measureBlock { () -> Void in
             for randomCombination in randomStrings {
-                let mass = Mass(quantity: 4, unit: randomCombination)
+                _ = Mass(quantity: 4, unit: randomCombination)
             }
         }
     }
@@ -164,7 +164,7 @@ class MassTests: XCTestCase {
         let randomStrings = self.arrayWithRandomCombinations()
         measureBlock { () -> Void in
             for randomCombination in randomStrings {
-                let mass = Measurement.unknownUnitWithString(randomCombination, quantity: 2)
+                _ = Measurement.unknownUnitWithString(randomCombination, quantity: 2)
             }
         }
     }
@@ -173,8 +173,8 @@ class MassTests: XCTestCase {
     // convenience method for testing add with an expected value
     class func add(mass : Mass, withMass: Mass, expect: Mass) {
         let addedTogether = mass + withMass
-        XCTAssertEqualWithAccuracy(addedTogether.quantity, expect.quantity, 0.0001, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected \(expect.quantity), got \(addedTogether.quantity)  ")
-        XCTAssert(addedTogether.unit.rawValue == expect.unit.rawValue, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected  \(expect.unit), got  \(addedTogether.unit) ")
+        XCTAssertEqualWithAccuracy(addedTogether.quantity, expect.quantity, accuracy: 0.0001, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected \(expect.quantity), got \(addedTogether.quantity)  ")
+        XCTAssert(addedTogether.unit.RawValue == expect.unit.RawValue, "\(mass.quantity) \(mass.unit) + \(withMass.quantity) \(withMass.unit), expected  \(expect.unit), got  \(addedTogether.unit) ")
     }
 
 }

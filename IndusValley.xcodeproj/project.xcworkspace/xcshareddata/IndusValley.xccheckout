@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>578BA20A-E69F-41F5-A909-11D72570FBCB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>IndusValley</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>78F157A57047EBDCC834C157E646606D4668B9E6</key>
 		<string>github.com:haaakon/Indus-Valley.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IndusValley.xcodeproj/project.xcworkspace</string>
+	<string>IndusValley.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>78F157A57047EBDCC834C157E646606D4668B9E6</key>

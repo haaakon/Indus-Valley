@@ -17,6 +17,9 @@ public enum VolumeUnit : String, UnitProtocol {
     case Desilitre       =         "dl"
     case Litre           =         "l"
 
+    public var RawValue : String {
+        return self.rawValue
+    }
 
     public var factor : Double {
         return {
@@ -34,9 +37,9 @@ public enum VolumeUnit : String, UnitProtocol {
 }
 
 public func == (lhs: VolumeUnit?, rhs : UnitProtocol?) -> Bool {
-    return lhs?.rawValue == rhs?.rawValue
+    return lhs?.RawValue == rhs?.RawValue
 }
 
 public func == (lhs: UnitProtocol?, rhs : VolumeUnit?) -> Bool {
-    return lhs?.rawValue == rhs?.rawValue
+    return lhs?.RawValue == rhs?.RawValue
 }

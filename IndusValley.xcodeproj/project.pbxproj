@@ -12,7 +12,6 @@
 		ECA5EA2B1B1220A500801E09 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA1F1B1220A500801E09 /* MassUnit.swift */; };
 		ECA5EA2C1B1220A500801E09 /* UnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA201B1220A500801E09 /* UnitProtocol.swift */; };
 		ECA5EA2D1B1220A500801E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA211B1220A500801E09 /* ViewController.swift */; };
-		ECA5EA2E1B1220A500801E09 /* Mass+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA221B1220A500801E09 /* Mass+JSON.swift */; };
 		ECA5EA2F1B1220A500801E09 /* AlternativeNamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA231B1220A500801E09 /* AlternativeNamesManager.swift */; };
 		ECA5EA301B1220A500801E09 /* VolumeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA241B1220A500801E09 /* VolumeUnit.swift */; };
 		ECA5EA311B1220A500801E09 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA251B1220A500801E09 /* Volume.swift */; };
@@ -27,14 +26,13 @@
 		ECA5EA6B1B1222D900801E09 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA1F1B1220A500801E09 /* MassUnit.swift */; };
 		ECA5EA6C1B1222D900801E09 /* UnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA201B1220A500801E09 /* UnitProtocol.swift */; };
 		ECA5EA6D1B1222D900801E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA211B1220A500801E09 /* ViewController.swift */; };
-		ECA5EA6E1B1222D900801E09 /* Mass+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA221B1220A500801E09 /* Mass+JSON.swift */; };
 		ECA5EA6F1B1222D900801E09 /* AlternativeNamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA231B1220A500801E09 /* AlternativeNamesManager.swift */; };
 		ECA5EA701B1222D900801E09 /* VolumeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA241B1220A500801E09 /* VolumeUnit.swift */; };
 		ECA5EA711B1222D900801E09 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA251B1220A500801E09 /* Volume.swift */; };
 		ECA5EA731B1222E400801E09 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA1B1B1220A500801E09 /* Measurement.swift */; };
 		ECA5EA941B1329D600801E09 /* Volume.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA961B1329D600801E09 /* Volume.strings */; };
 		ECA5EA9C1B1330E100801E09 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA9E1B1330E100801E09 /* Mass.strings */; };
-		ECA5EAA41B13312E00801E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EAA31B13312E00801E09 /* Main.storyboard */; };
+		ECE81DDE1B278B1E006E3182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE81DDD1B278B1E006E3182 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +56,6 @@
 		ECA5EA1F1B1220A500801E09 /* MassUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MassUnit.swift; path = IndusValley/MassUnit.swift; sourceTree = SOURCE_ROOT; };
 		ECA5EA201B1220A500801E09 /* UnitProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitProtocol.swift; path = IndusValley/UnitProtocol.swift; sourceTree = SOURCE_ROOT; };
 		ECA5EA211B1220A500801E09 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = IndusValley/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		ECA5EA221B1220A500801E09 /* Mass+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Mass+JSON.swift"; path = "IndusValley/Mass+JSON.swift"; sourceTree = SOURCE_ROOT; };
 		ECA5EA231B1220A500801E09 /* AlternativeNamesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlternativeNamesManager.swift; path = IndusValley/AlternativeNamesManager.swift; sourceTree = SOURCE_ROOT; };
 		ECA5EA241B1220A500801E09 /* VolumeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeUnit.swift; path = IndusValley/VolumeUnit.swift; sourceTree = SOURCE_ROOT; };
 		ECA5EA251B1220A500801E09 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Volume.swift; path = IndusValley/Volume.swift; sourceTree = SOURCE_ROOT; };
@@ -74,7 +71,7 @@
 		ECA5EAA01B1330E800801E09 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Volume.strings; sourceTree = "<group>"; };
 		ECA5EAA11B1330EF00801E09 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Mass.strings; sourceTree = "<group>"; };
 		ECA5EAA21B1330F000801E09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Mass.strings; sourceTree = "<group>"; };
-		ECA5EAA31B13312E00801E09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ECE81DDD1B278B1E006E3182 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +102,7 @@
 		EC3B4C1A1AE3BF0100342628 = {
 			isa = PBXGroup;
 			children = (
+				ECE81DDD1B278B1E006E3182 /* Main.storyboard */,
 				EC3B4C251AE3BF0100342628 /* Indus Valley */,
 				ECA5EA531B1221DE00801E09 /* IndusValleyTests */,
 				EC3B4C241AE3BF0100342628 /* Products */,
@@ -126,13 +124,11 @@
 				ECA5EA3C1B1220D200801E09 /* Images.xcassets */,
 				ECA5EA3E1B1220D200801E09 /* Info.plist */,
 				ECA5EA1E1B1220A500801E09 /* Mass.swift */,
-				ECA5EAA31B13312E00801E09 /* Main.storyboard */,
 				ECA5EA961B1329D600801E09 /* Volume.strings */,
 				ECA5EA9E1B1330E100801E09 /* Mass.strings */,
 				ECA5EA201B1220A500801E09 /* UnitProtocol.swift */,
 				ECA5EA1B1B1220A500801E09 /* Measurement.swift */,
 				ECA5EA211B1220A500801E09 /* ViewController.swift */,
-				ECA5EA221B1220A500801E09 /* Mass+JSON.swift */,
 				ECA5EA231B1220A500801E09 /* AlternativeNamesManager.swift */,
 				ECA5EA1F1B1220A500801E09 /* MassUnit.swift */,
 				ECA5EA241B1220A500801E09 /* VolumeUnit.swift */,
@@ -216,6 +212,7 @@
 		EC3B4C1B1AE3BF0100342628 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = haaakon;
 				TargetAttributes = {
@@ -256,7 +253,7 @@
 				ECA5EA941B1329D600801E09 /* Volume.strings in Resources */,
 				ECA5EA9C1B1330E100801E09 /* Mass.strings in Resources */,
 				ECA5EA441B1220D200801E09 /* Images.xcassets in Resources */,
-				ECA5EAA41B13312E00801E09 /* Main.storyboard in Resources */,
+				ECE81DDE1B278B1E006E3182 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA5EA2D1B1220A500801E09 /* ViewController.swift in Sources */,
-				ECA5EA2E1B1220A500801E09 /* Mass+JSON.swift in Sources */,
 				ECA5EA301B1220A500801E09 /* VolumeUnit.swift in Sources */,
 				ECA5EA321B1220A500801E09 /* AppDelegate.swift in Sources */,
 				ECA5EA2A1B1220A500801E09 /* Mass.swift in Sources */,
@@ -295,7 +291,6 @@
 				ECA5EA601B1221FC00801E09 /* XCTestCase+Helper.swift in Sources */,
 				ECA5EA5D1B1221FC00801E09 /* Arbitrary.swift in Sources */,
 				ECA5EA6F1B1222D900801E09 /* AlternativeNamesManager.swift in Sources */,
-				ECA5EA6E1B1222D900801E09 /* Mass+JSON.swift in Sources */,
 				ECA5EA6D1B1222D900801E09 /* ViewController.swift in Sources */,
 				ECA5EA731B1222E400801E09 /* Measurement.swift in Sources */,
 				ECA5EA5F1B1221FC00801E09 /* MassTests.swift in Sources */,
@@ -433,11 +428,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/IndusValley/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = IndusValley;
 				PRODUCT_NAME = IndusValley;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -447,10 +444,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/IndusValley/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = IndusValley;
 				PRODUCT_NAME = IndusValley;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

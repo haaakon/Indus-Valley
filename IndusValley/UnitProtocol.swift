@@ -12,10 +12,10 @@ typealias UnitType = UnitProtocol
 
 public protocol UnitProtocol  {
 
-    var rawValue : String { get }
+    var RawValue : String { get }
     var factor: Double { get }
-    init?(rawValue: String)
-    
+//    init?(rawValue: String)
+
 }
 
 

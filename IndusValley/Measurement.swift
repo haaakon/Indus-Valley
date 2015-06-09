@@ -26,7 +26,7 @@ public class Measurement {
             }
             return "PLURAL"
         }()
-        let key = "\(self.unit.rawValue.uppercaseString)_LONGFORM_\(pluralOrSingular)"
+        let key = "\(self.unit.RawValue.uppercaseString)_LONGFORM_\(pluralOrSingular)"
         let localizedName = NSLocalizedString(key, tableName: tableName(), bundle: NSBundle(forClass: self.dynamicType), comment: "longform name of a measurement")
         return localizedName
     }
@@ -36,13 +36,16 @@ public class Measurement {
         self.unit = unit
     }
 
-    public class func unknownUnitWithString(unitString: String, quantity: Double) -> Measurement? {
+    public class func unknownUnitWithString(unitString: String?, quantity: Double) -> Measurement? {
+        if unitString == nil {
+            return nil
+        }
         // find a match in any of the translation files
         for unitName in subclassNames() {
             let bundle = NSBundle(forClass: self)
             if let path = bundle.pathForResource(unitName, ofType: "strings") {
                 let keyValueList = NSDictionary(contentsOfFile: path)
-                if let keys = keyValueList?.allKeysForObject(unitString) {
+                if let keys = keyValueList?.allKeysForObject(unitString!) {
                     let key = keys.first as? String
                     if let component = key?.componentsSeparatedByString("_").first {
                         if (unitName.rangeOfString("Mass") != nil) {
@@ -88,7 +91,7 @@ public class Measurement {
         return ["Mass", "Volume"]
     }
 
-    func convert(#toUnit : UnitProtocol) -> Self {
+    func convert(toUnit toUnit : UnitProtocol) -> Self {
         let newUnit = self.dynamicType(quantity:  self.quantity * self.unit.factor / toUnit.factor, unit: toUnit)
         return newUnit
     }
