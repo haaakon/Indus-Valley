@@ -33,6 +33,7 @@
 		ECA5EA941B1329D600801E09 /* Volume.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA961B1329D600801E09 /* Volume.strings */; };
 		ECA5EA9C1B1330E100801E09 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA9E1B1330E100801E09 /* Mass.strings */; };
 		ECE81DDE1B278B1E006E3182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE81DDD1B278B1E006E3182 /* Main.storyboard */; };
+		ECE81DDF1B278BA9006E3182 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA9E1B1330E100801E09 /* Mass.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE81DDF1B278BA9006E3182 /* Mass.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
