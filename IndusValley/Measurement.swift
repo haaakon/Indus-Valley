@@ -92,7 +92,7 @@ public class Measurement {
     }
 
     func convert(toUnit toUnit : UnitProtocol) -> Self {
-        let newUnit = self.dynamicType(quantity:  self.quantity * self.unit.factor / toUnit.factor, unit: toUnit)
+        let newUnit = self.dynamicType.init(quantity:  self.quantity * self.unit.factor / toUnit.factor, unit: toUnit)
         return newUnit
     }
 }
