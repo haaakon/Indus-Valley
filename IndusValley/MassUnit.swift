@@ -39,14 +39,14 @@ public enum MassUnit : String, UnitProtocol {
     }
     
 }
-
-public func == (lhs: MassUnit?, rhs : UnitProtocol?) -> Bool {
-    return lhs?.RawValue == rhs?.RawValue
-}
-
-public func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
-    return lhs?.RawValue == rhs?.RawValue
-}
+//
+//public func == (lhs: MassUnit?, rhs : UnitProtocol?) -> Bool {
+//    return lhs?.RawValue == rhs?.RawValue
+//}
+//
+//public func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
+//    return lhs?.RawValue == rhs?.RawValue
+//}
 
 extension MassUnit: CustomStringConvertible {
     public var description: String {

@@ -36,10 +36,10 @@ public enum VolumeUnit : String, UnitProtocol {
     }
 }
 
-public func == (lhs: VolumeUnit?, rhs : UnitProtocol?) -> Bool {
-    return lhs?.RawValue == rhs?.RawValue
-}
-
-public func == (lhs: UnitProtocol?, rhs : VolumeUnit?) -> Bool {
-    return lhs?.RawValue == rhs?.RawValue
-}
+//public func == (lhs: VolumeUnit?, rhs : UnitProtocol?) -> Bool {
+//    return lhs?.rawValue == rhs?.RawValue
+//}
+//
+//public func == (lhs: UnitProtocol?, rhs : VolumeUnit?) -> Bool {
+//    return lhs?.RawValue == rhs?.RawValue
+//}

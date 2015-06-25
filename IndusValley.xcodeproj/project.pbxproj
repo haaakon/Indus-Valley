@@ -32,6 +32,8 @@
 		ECA5EA731B1222E400801E09 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA1B1B1220A500801E09 /* Measurement.swift */; };
 		ECA5EA941B1329D600801E09 /* Volume.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA961B1329D600801E09 /* Volume.strings */; };
 		ECA5EA9C1B1330E100801E09 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA9E1B1330E100801E09 /* Mass.strings */; };
+		ECC09BE51B3C87DE00E446FF /* Measurement+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC09BE41B3C87DE00E446FF /* Measurement+Extension.swift */; };
+		ECC09BE61B3C87DE00E446FF /* Measurement+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC09BE41B3C87DE00E446FF /* Measurement+Extension.swift */; };
 		ECE81DDE1B278B1E006E3182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE81DDD1B278B1E006E3182 /* Main.storyboard */; };
 		ECE81DDF1B278BA9006E3182 /* Mass.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA5EA9E1B1330E100801E09 /* Mass.strings */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,7 @@
 		ECA5EAA01B1330E800801E09 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Volume.strings; sourceTree = "<group>"; };
 		ECA5EAA11B1330EF00801E09 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Mass.strings; sourceTree = "<group>"; };
 		ECA5EAA21B1330F000801E09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Mass.strings; sourceTree = "<group>"; };
+		ECC09BE41B3C87DE00E446FF /* Measurement+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Measurement+Extension.swift"; sourceTree = "<group>"; };
 		ECE81DDD1B278B1E006E3182 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +132,7 @@
 				ECA5EA9E1B1330E100801E09 /* Mass.strings */,
 				ECA5EA201B1220A500801E09 /* UnitProtocol.swift */,
 				ECA5EA1B1B1220A500801E09 /* Measurement.swift */,
+				ECC09BE41B3C87DE00E446FF /* Measurement+Extension.swift */,
 				ECA5EA211B1220A500801E09 /* ViewController.swift */,
 				ECA5EA231B1220A500801E09 /* AlternativeNamesManager.swift */,
 				ECA5EA1F1B1220A500801E09 /* MassUnit.swift */,
@@ -281,6 +285,7 @@
 				ECA5EA2F1B1220A500801E09 /* AlternativeNamesManager.swift in Sources */,
 				ECA5EA2B1B1220A500801E09 /* MassUnit.swift in Sources */,
 				ECA5EA2C1B1220A500801E09 /* UnitProtocol.swift in Sources */,
+				ECC09BE51B3C87DE00E446FF /* Measurement+Extension.swift in Sources */,
 				ECA5EA311B1220A500801E09 /* Volume.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +300,7 @@
 				ECA5EA6F1B1222D900801E09 /* AlternativeNamesManager.swift in Sources */,
 				ECA5EA6D1B1222D900801E09 /* ViewController.swift in Sources */,
 				ECA5EA731B1222E400801E09 /* Measurement.swift in Sources */,
+				ECC09BE61B3C87DE00E446FF /* Measurement+Extension.swift in Sources */,
 				ECA5EA5F1B1221FC00801E09 /* MassTests.swift in Sources */,
 				ECA5EA711B1222D900801E09 /* Volume.swift in Sources */,
 				ECA5EA5E1B1221FC00801E09 /* VolumeTests.swift in Sources */,
@@ -459,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -470,6 +477,7 @@
 				INFOPLIST_FILE = IndusValleyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IndusValley.app/IndusValley";
 			};
 			name = Debug;
@@ -478,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

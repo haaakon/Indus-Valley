@@ -8,20 +8,20 @@
 
 import Foundation
 
-public class Mass : Measurement {
-
-    public init(quantity: Double, unit: MassUnit) {
-        super.init(quantity: quantity, unit: unit)
-    }
-
-    required public init(quantity: Double, unit: UnitProtocol) {
-        super.init(quantity: quantity, unit: unit)
-    }
-
-    required public init?(quantity: Double, unit: String) {
-        super.init(quantity: quantity, unit: unit)
-    }
-}
+//public class Mass : Measurement {
+//
+////    public init(quantity: Double, unit: MassUnit) {
+////        super.init(quantity: quantity, unit: unit)
+////    }
+////
+////    required public init(quantity: Double, unit: UnitProtocol) {
+////        super.init(quantity: quantity, unit: unit)
+////    }
+////
+////    required public init?(quantity: Double, unit: String) {
+////        super.init(quantity: quantity, unit: unit)
+////    }
+//}
 
 //// Not making this a method requirement of `UnitProtocol` means you've only got to
 //// write the code once, here, instead of in every enum that conforms to `UnitProtocol`.
