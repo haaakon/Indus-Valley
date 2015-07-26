@@ -15,6 +15,34 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC3B4C221AE3BF0100342628"
+               BuildableName = "Indus Valley.app"
+               BlueprintName = "Indus Valley"
+               ReferencedContainer = "container:Indus Valley.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC3B4C371AE3BF0200342628"
+               BuildableName = "Indus ValleyTests.xctest"
+               BlueprintName = "Indus ValleyTests"
+               ReferencedContainer = "container:Indus Valley.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC3B4C221AE3BF0100342628"
                BuildableName = "IndusValley.app"
                BlueprintName = "IndusValley"
                ReferencedContainer = "container:IndusValley.xcodeproj">
@@ -40,7 +68,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES"
       buildConfiguration = "Debug">
       <Testables>
          <TestableReference
@@ -58,13 +85,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC3B4C221AE3BF0100342628"
-            BuildableName = "IndusValley.app"
-            BlueprintName = "IndusValley"
-            ReferencedContainer = "container:IndusValley.xcodeproj">
+            BuildableName = "Indus Valley.app"
+            BlueprintName = "Indus Valley"
+            ReferencedContainer = "container:Indus Valley.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -74,7 +99,6 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
@@ -95,15 +119,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC3B4C221AE3BF0100342628"
-            BuildableName = "IndusValley.app"
-            BlueprintName = "IndusValley"
-            ReferencedContainer = "container:IndusValley.xcodeproj">
+            BuildableName = "Indus Valley.app"
+            BlueprintName = "Indus Valley"
+            ReferencedContainer = "container:Indus Valley.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

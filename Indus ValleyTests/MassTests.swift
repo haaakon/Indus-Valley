@@ -27,7 +27,6 @@ struct MassTestsConstants {
 
 }
 
-@testable import IndusValley
 class MassTests: XCTestCase {
 
     override func setUp() {
