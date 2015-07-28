@@ -23,10 +23,10 @@ Pod::Spec.new do |s|
   s.author           = { "Håkon Bogen" => "hakon.bogen@shortcut.no" }
   s.source           = { :git => "https://github.com/haaakon/Indus-Valley.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'IndusValley/**/**'
+  s.source_files = 'IndusValley/*.swift',"IndusValley/**/*.strings"
 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

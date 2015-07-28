@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				ECE81DDD1B278B1E006E3182 /* Main.storyboard */,
-				EC3B4C251AE3BF0100342628 /* Indus Valley */,
+				EC3B4C251AE3BF0100342628 /* IndusValley */,
 				ECA5EA531B1221DE00801E09 /* IndusValleyTests */,
 				EC3B4C241AE3BF0100342628 /* Products */,
 			);
@@ -119,7 +119,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC3B4C251AE3BF0100342628 /* Indus Valley */ = {
+		EC3B4C251AE3BF0100342628 /* IndusValley */ = {
 			isa = PBXGroup;
 			children = (
 				ECA5EA3C1B1220D200801E09 /* Images.xcassets */,
@@ -138,6 +138,7 @@
 				EC2752241B07967E0007125D /* Names */,
 				EC3B4C261AE3BF0100342628 /* Supporting Files */,
 			);
+			name = IndusValley;
 			path = "Indus Valley";
 			sourceTree = "<group>";
 		};
