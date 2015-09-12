@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1C6F4F1B7B68CC009EEFC2 /* BundleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6F4E1B7B68CC009EEFC2 /* BundleClass.swift */; };
+		EC1C6F501B7B68E6009EEFC2 /* BundleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6F4E1B7B68CC009EEFC2 /* BundleClass.swift */; };
 		ECA5EA271B1220A500801E09 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA1B1B1220A500801E09 /* Measurement.swift */; };
 		ECA5EA2A1B1220A500801E09 /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA1E1B1220A500801E09 /* Mass.swift */; };
 		ECA5EA2B1B1220A500801E09 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA5EA1F1B1220A500801E09 /* MassUnit.swift */; };
@@ -50,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		EC0D2DF11AE833DE00595A61 /* XCTestCase+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCTestCase+Helper.swift"; path = "../Indus ValleyTests/XCTestCase+Helper.swift"; sourceTree = "<group>"; };
+		EC1C6F4E1B7B68CC009EEFC2 /* BundleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BundleClass.swift; path = IndusValley/BundleClass.swift; sourceTree = SOURCE_ROOT; };
 		EC3B4C231AE3BF0100342628 /* IndusValley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndusValley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3B4C3E1AE3BF0200342628 /* VolumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VolumeTests.swift; path = "../Indus ValleyTests/VolumeTests.swift"; sourceTree = "<group>"; };
 		EC3B4C511AE3C0F700342628 /* MassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MassTests.swift; path = "../Indus ValleyTests/MassTests.swift"; sourceTree = "<group>"; };
@@ -127,14 +130,15 @@
 			children = (
 				ECA5EA3C1B1220D200801E09 /* Images.xcassets */,
 				ECA5EA3E1B1220D200801E09 /* Info.plist */,
-				ECA5EA1E1B1220A500801E09 /* Mass.swift */,
 				ECA5EA961B1329D600801E09 /* Volume.strings */,
 				ECA5EA9E1B1330E100801E09 /* Mass.strings */,
 				ECA5EA201B1220A500801E09 /* UnitProtocol.swift */,
-				ECA5EA1B1B1220A500801E09 /* Measurement.swift */,
-				ECC09BE41B3C87DE00E446FF /* Measurement+Extension.swift */,
 				ECA5EA211B1220A500801E09 /* ViewController.swift */,
 				ECA5EA231B1220A500801E09 /* AlternativeNamesManager.swift */,
+				ECA5EA1B1B1220A500801E09 /* Measurement.swift */,
+				ECC09BE41B3C87DE00E446FF /* Measurement+Extension.swift */,
+				EC1C6F4E1B7B68CC009EEFC2 /* BundleClass.swift */,
+				ECA5EA1E1B1220A500801E09 /* Mass.swift */,
 				ECA5EA1F1B1220A500801E09 /* MassUnit.swift */,
 				ECA5EA241B1220A500801E09 /* VolumeUnit.swift */,
 				ECA5EA251B1220A500801E09 /* Volume.swift */,
@@ -277,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1C6F4F1B7B68CC009EEFC2 /* BundleClass.swift in Sources */,
 				ECA5EA2D1B1220A500801E09 /* ViewController.swift in Sources */,
 				ECA5EA301B1220A500801E09 /* VolumeUnit.swift in Sources */,
 				ECA5EA321B1220A500801E09 /* AppDelegate.swift in Sources */,
@@ -307,6 +312,7 @@
 				ECA5EA571B1221DE00801E09 /* IndusValleyTests.swift in Sources */,
 				ECA5EA6A1B1222D900801E09 /* Mass.swift in Sources */,
 				ECA5EA6C1B1222D900801E09 /* UnitProtocol.swift in Sources */,
+				EC1C6F501B7B68E6009EEFC2 /* BundleClass.swift in Sources */,
 				ECA5EA701B1222D900801E09 /* VolumeUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

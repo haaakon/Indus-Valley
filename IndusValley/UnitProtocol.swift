@@ -10,13 +10,14 @@ import Foundation
 
 typealias UnitType = UnitProtocol
 
-public protocol UnitProtocol  {
+public protocol UnitProtocol {
 
-    var RawValue : String { get }
+    var name : String { get }
     var factor: Double { get }
-//    init?(rawValue: String)
 
 }
 
 
-
+public func == (lhs: UnitProtocol?, rhs : UnitProtocol?) -> Bool {
+    return lhs?.name == rhs?.name
+}

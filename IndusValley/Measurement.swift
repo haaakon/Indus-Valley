@@ -10,17 +10,71 @@
 import Foundation
 
 public protocol Measurement {
-    
+
+    init?(quantity: Double, unit: String)
+    init(quantity: Double, unit: UnitProtocol)
+
     var quantity: Double { get set }
-    var factor : Double { get set }
     var unit : UnitProtocol { get set }
+    
+    var longformUnitName : String { get }
 
     func tableName() -> String
+
+//    static func unknownUnitWithString(unitString: String?, quantity: Double) -> Measurement?
+
+    mutating func convert(toUnit toUnit: UnitProtocol)
+
+    func unitByConverting(toUnit toUnit: UnitProtocol) -> Measurement
+}
+
+public func measurementFromUnknownUnitWithString(unitString: String?, quantity: Double) -> Measurement? {
+        if unitString == nil {
+            return nil
+        }
+
+        // find a match in any of the translation files
+        for unitName in ["Mass", "Volume"] {
+            let bundle = NSBundle(forClass: BundleClass.self)
+            if let path = bundle.pathForResource(unitName, ofType: "strings") {
+                let keyValueList = NSDictionary(contentsOfFile: path)
+                if let keys = keyValueList?.allKeysForObject(unitString!) {
+                    let key = keys.first as? String
+                    if let component = key?.componentsSeparatedByString("_").first {
+                        if (unitName.rangeOfString("Mass") != nil) {
+                            if let massUnit = MassUnit(rawValue: component.lowercaseString) {
+                               return Mass(quantity: quantity, unit: massUnit)
+                            }
+                        } else if (unitName.rangeOfString("Volume") != nil) {
+//                            return Volume(quantity: quantity, unit: MassUnit(rawValue: component.lowercaseString)!)
+//                            return Volume(quantity: quantity, unit: component.lowercaseString)
+                        }
+                    }
+                }
+            }
+        }
+        return nil
+}
+
+//public func == (lhs: Measurement?, rhs : Measurement?) -> Bool {
+//    return lhs?.unit.name == rhs?.unit.name
+//}
+//
+//public func == (lhs: UnitProtocol?, rhs : MassUnit?) -> Bool {
+//    return lhs?.RawValue == rhs?.RawValue
+//}
+
+func +<T: Measurement> (left:T, right:T) -> Measurement {
+    let new = right.unitByConverting(toUnit: left.unit)
+    return T(quantity: left.quantity + new.quantity , unit: left.unit)
+}
+
 //    {
 //        return "\(self.dynamicType)".componentsSeparatedByString(".")[1]
 //    }
 
-    var longformUnitName : String { get }
+//    func unknownUnitWithString(unitString: String?, quantity: Double) -> Measurement?
+
     //{
 //        let aType = self.dynamicType
 //        let pluralOrSingular : String = {
@@ -34,13 +88,11 @@ public protocol Measurement {
 //        return localizedName
 //    }
 
-     init(quantity: Double, unit: UnitProtocol)
     // {
 //        self.quantity = quantity
 //        self.unit = unit
 //    }
 
-     func unknownUnitWithString(unitString: String?, quantity: Double) -> Measurement?
 //    {
 //        if unitString == nil {
 //            return nil
@@ -65,7 +117,6 @@ public protocol Measurement {
 //        return nil
 //    }
 
-    init?(quantity: Double, unit: String)
     //{
 //        let bundle = NSBundle(forClass: self.dynamicType)
 //        let tableName = "\(self.dynamicType)".componentsSeparatedByString(".")[1]
@@ -93,22 +144,18 @@ public protocol Measurement {
 //        }
 //    }
 
-    static func subclassNames() -> [String]
+//    static func subclassNames() -> [String]
 //    {
 //        return ["Mass", "Volume"]
 //    }
 //
-    func convert(toUnit toUnit : UnitProtocol) -> Self
+//    func convert(toUnit toUnit : UnitProtocol) -> Self
 //    v{
 //        let newUnit = self.dynamicType.init(quantity:  self.quantity * self.unit.factor / toUnit.factor, unit: toUnit)
 //        return newUnit
 //    }
-}
 
-func +<T: Measurement> (left:T, right:T) -> Measurement {
-    let newRightValue  = right.convert(toUnit: left.unit)
-    return T(quantity: left.quantity + newRightValue.quantity , unit: left.unit)
-}
+
 
 //func - (left:Mass, right:Mass) -> Mass {
 //    let newRightValue = right.converted(toUnit: left.unit)

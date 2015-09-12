@@ -8,7 +8,7 @@
 
 import Foundation
 
-//public class Volume : Measurement {
+public class Volume {
 
 //    public init(quantity: Double, unit: VolumeUnit) {
 //        super.init(quantity: quantity, unit: unit)
@@ -21,4 +21,5 @@ import Foundation
 //    required public init?(quantity: Double, unit: String) {
 //        super.init(quantity: quantity, unit: unit)
 //    }
-//}
+    
+}

@@ -16,7 +16,7 @@ extension XCTestCase {
     func arrayWithRandomCombinations() -> [String] {
         let letters = "kggramggrams"
         var stringArray = [String]()
-        for i in 0...1000 {
+        for i in 0...10000 {
             let randomLength = Int((arc4random_uniform(4)) + 1)
             var randomString = ""
             for j in 0..<randomLength {
@@ -29,12 +29,18 @@ extension XCTestCase {
         return stringArray
     }
 }
-    extension String
-    {
-        subscript(i: Int) -> Character {
-            return self[advance(startIndex, i)]
+
+extension String
+{
+    subscript(i: Int) -> Character! {
+        for (index,character) in self.characters.enumerate() {
+            if index == i {
+                return character
+            }
         }
+        return nil
     }
+}
 //    NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 //
 //    -(NSString *) randomStringWithLength: (int) len {
